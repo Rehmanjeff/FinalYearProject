@@ -190,22 +190,11 @@ clear: both;
 }
 
 div#nav {
-    background-color: cadetblue;
-    height: 60px;
+    height: 50px;
     font-size: 20px;
     text-decoration: none;
 }
-
-div#logo{
-    background-color: #b3d4fc;
-    height: 60px;
-    font-size: 20px;
-}
-#nav_links{
-    float: right;
-}
 #nav.col-md div#nav a:link, a:hover {
-    background-color: antiquewhite;
     text-decoration: none !important;
 }
 #slides.col-md{
