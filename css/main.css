@@ -191,14 +191,17 @@ div#nav {
 }
 
 #nav, .navbar-header{
-    margin-top: 30px;
+    margin-top: 20px;
+}
+
+.navbar{
+    height: 83px;
 }
 
 #nav.col-md div#nav a:link, a:hover {
     text-decoration: none !important;
 }
-#menu{
-    position: absolute;
+#menu.col-md{
     top: 0;
     left: 0;
     right: 0;
@@ -207,7 +210,7 @@ div#nav {
 }
 #slideShow{
     position: relative;
-    margin-top: 105px;
+    margin-top: 175px;
 }
 h2{
     margin: 0;
@@ -250,4 +253,15 @@ h2{
     top: 0;
     left: 0;
     min-height: 600px;
+}
+
+.footer-distributed {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+    margin-top: 80px;
 }
