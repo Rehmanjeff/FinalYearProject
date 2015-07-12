@@ -185,12 +185,12 @@ clear: both;
 /*==========================================================================
                                 PCT TEAM EDITS
  ==========================================================================*/
-body{
-    background-color: #2ecc71;
+.container{/*
+    background-color: #2ecc71 !important;*/
 }
 
 div#nav {
-    font-size: 15px;
+    font-size: 15px !important;
 }
 
 #nav, .navbar-header{
@@ -225,15 +225,6 @@ h2{
     font-family: "trebuchet ms", sans-serif;
 }
 
-.item{
-    background: #333;
-    text-align: center;
-    height: 400px !important;
-}
-
-.carousel{
-}
-
 /* Bump up size of carousel content */
 .carousel-caption p {
     margin-bottom: 20px;
@@ -250,16 +241,25 @@ h2{
     z-index: 1;
 }
 
+#myCarousel,.carousel-inner,#slideShow.col-md{
+    height: 600px;
+}
 /* Declare heights because of positioning of img element */
 .carousel .item {
-    height: 400px;
+    height: 600px;
     background-color:#555;
+}
+
+.item{
+    background: #333;
+    text-align: center;
+    height: 600px !important;
 }
 .carousel img {
     position: absolute;
     top: 0;
     left: 0;
-    min-height: 600px;
+    height: 600px;
 }
 
 .footer-distributed {
@@ -271,4 +271,11 @@ h2{
     font: normal 16px sans-serif;
     padding: 45px 50px;
     margin-top: 80px;
+}
+
+#aboutUs {
+    display: inline;
+    float: left;
+    padding: 60px 0;
+    width: 100%;
 }
