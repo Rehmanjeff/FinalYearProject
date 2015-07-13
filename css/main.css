@@ -189,15 +189,21 @@ clear: both;
     background-color: #2ecc71 !important;*/
 }
 
+
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+<!-- -->
+
 div#nav {
     font-size: 15px !important;
 }
 
-#nav, .navbar-header{
-    margin-top: 20px;
-}
-
-.navbar{
+.navbar-collapse ul, .navbar-header{
+    margin-right: 3px;
+    text-align: center;
+    margin-top: 17px;
 }
 
 #nav.col-md div#nav a:link, a:hover {
@@ -271,11 +277,4 @@ h2{
     font: normal 16px sans-serif;
     padding: 45px 50px;
     margin-top: 80px;
-}
-
-#aboutUs {
-    display: inline;
-    float: left;
-    padding: 60px 0;
-    width: 100%;
 }
