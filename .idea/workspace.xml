@@ -5,8 +5,6 @@
       <change type="DELETED" beforePath="C:\xampp\htdocs\FinalYearProject\img\font-awesome-4.3.0.zip" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\FinalYearProject\img\jssor.carousel.slider.for.bootstrap.example.zip" afterPath="" />
       <change type="DELETED" beforePath="C:\xampp\htdocs\FinalYearProject\img\menu_active.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="FinalYearProject.iws" />
@@ -207,7 +205,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.10590015" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
