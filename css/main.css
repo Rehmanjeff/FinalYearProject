@@ -1,27 +1,28 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
-
 html {
-   color: #222;
-   font-size: 1em;
-   line-height: 1.4;
-}::-moz-selection {  
-     background: #b3d4fc;
-     text-shadow: none;
-}::selection {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
     background: #b3d4fc;
     text-shadow: none;
 }
 
-
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
 
 hr {
- display: block;
- height: 1px;
- border: 0;
- border-top: 1px solid #ccc;
- margin: 1em 0;
- padding: 0;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
 }
 
 audio,
@@ -30,30 +31,29 @@ iframe,
 img,
 svg,
 video {
-   vertical-align: middle;
+    vertical-align: middle;
 }
 
 fieldset {
-border: 0;
-margin: 0;
-padding: 0;
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
 
 textarea {
-resize: vertical;
+    resize: vertical;
 }
 
 .browserupgrade {
-margin: 0.2em 0;
-background: #ccc;
-color: #000;
-padding: 0.2em 0;
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
 }
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
 
 /* ==========================================================================
    Media Queries
@@ -64,9 +64,9 @@ padding: 0.2em 0;
 }
 
 @media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
 }
 
 /* ==========================================================================
@@ -92,30 +92,30 @@ padding: 0.2em 0;
 .visuallyhidden.focusable:active,
 .visual,
 lyhidden.focusable:focus {
-clip: auto;
-height: auto;
-margin: 0;
-overflow: visible;
-position: static;
-width: auto;
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
 }
 
 .invisible {
-visibility: hidden;
+    visibility: hidden;
 }
 
 .clearfix:before,
 .clearfix:after {
-content: " ";
-display: table;
+    content: " ";
+    display: table;
 }
 
 .clearfix:after {
-clear: both;
+    clear: both;
 }
 
 .clearfix {
-*zoom: 1;
+    *zoom: 1;
 }
 
 /* ==========================================================================
@@ -185,22 +185,27 @@ clear: both;
 /*==========================================================================
                                 PCT TEAM EDITS
  ==========================================================================*/
-.container{/*
-    background-color: #2ecc71 !important;*/
+.container {
+    /*
+        background-color: #2ecc71 !important;*/
 }
 
-
-<!-- -->
-<!-- -->
-<!-- -->
-<!-- -->
-<!-- -->
+<!--
+-->
+<!--
+-->
+<!--
+-->
+<!--
+-->
+<!--
+-->
 
 div#nav {
     font-size: 15px !important;
 }
 
-.navbar-collapse ul, .navbar-header{
+.navbar-collapse ul, .navbar-header {
     margin-right: 3px;
     text-align: center;
     margin-top: 17px;
@@ -210,7 +215,7 @@ div#nav {
     text-decoration: none !important;
 }
 
-#menu.col-md{
+#menu.col-md {
     top: 0;
     left: 0;
     right: 0;
@@ -218,12 +223,12 @@ div#nav {
     margin-bottom: -90px;
 }
 
-#slideShow{
+#slideShow {
     position: relative;
     margin-top: 180px;
 }
 
-h2{
+h2 {
     margin: 0;
     color: #666;
     padding-top: 90px;
@@ -247,20 +252,22 @@ h2{
     z-index: 1;
 }
 
-#myCarousel,.carousel-inner,#slideShow.col-md{
+#myCarousel, .carousel-inner, #slideShow.col-md {
     height: 600px;
 }
+
 /* Declare heights because of positioning of img element */
 .carousel .item {
     height: 600px;
-    background-color:#555;
+    background-color: #555;
 }
 
-.item{
+.item {
     background: #333;
     text-align: center;
     height: 600px !important;
 }
+
 .carousel img {
     position: absolute;
     top: 0;
@@ -268,45 +275,96 @@ h2{
     height: 600px;
 }
 
-
-#research_side_nav{
+#research_side_nav {
     background-color: #888888;
 }
-#research_projects{
+
+#research_projects {
 }
-#nav_projects_outer{
+
+#nav_projects_outer {
     padding: 40px;
     margin-top: -50px;
 }
-.alert_success{
+
+.alert_success {
     margin: 0px;
     padding: 0px;
     height: 1px;
 }
-#all_done
-{
-}
-ledgend{
-float: right;
+
+ledgend {
+    float: right;
     margin-top: 23px;
 }
-#project_name h3{
+
+#project_name h3 {
     float: left;
 }
+
 #inner_projects {
-     padding: 30px;
- }
-#all_done {
-    padding:0px;
+    padding: 30px;
 }
-#project_name h4{
+
+#all_done {
+    padding: 0px;
+}
+
+#project_name h4 {
     float: right;
 }
-.bottom-align-text {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+
+#profiles_view .col-md-3 {
+    background-color: #999999;
+    padding: 20px;
+    border: white solid 10px;
 }
+
+#profiles_view img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+#profiles_view span{
+    text-align: center;
+}
+
+.caption {
+    display: block;
+}
+
+.flip-container {
+    margin: 50px;
+    perspective: 1000;
+    display: inline-block;
+}
+.flip-container:hover .card {
+    transform: rotateY(180deg);
+}
+.card, .front, .back {
+    width: 150px;
+    height: 150px;
+}
+.card {
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+}
+.front {
+    z-index: 1;
+    transform: rotateY(180deg);
+    background: no-repeat;
+}
+.back {
+    z-index: 2; /* back side, placed above front */
+    transform: rotateY(0deg);
+    background:  no-repeat;
+}
+
 .footer-distributed {
     background-color: #292c2f;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
