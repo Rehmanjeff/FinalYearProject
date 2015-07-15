@@ -293,7 +293,7 @@ float: right;
 #project_name h3{
     float: left;
 }
-div#inner_projects {
+#inner_projects {
      padding: 30px;
  }
 #all_done {
@@ -302,9 +302,10 @@ div#inner_projects {
 #project_name h4{
     float: right;
 }
-div#header_profiles {
-    position: relative;
-    margin-top: 70px;
+.bottom-align-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 .footer-distributed {
     background-color: #292c2f;
