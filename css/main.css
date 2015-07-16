@@ -185,21 +185,14 @@ lyhidden.focusable:focus {
 /*==========================================================================
                                 PCT TEAM EDITS
  ==========================================================================*/
+
+/* <==================================================>*/
+/* <================== Home page ====================>*/
+/* <=================================================>*/
 .container {
     /*
         background-color: #2ecc71 !important;*/
 }
-
-<!--
--->
-<!--
--->
-<!--
--->
-<!--
--->
-<!--
--->
 
 div#nav {
     font-size: 15px !important;
@@ -279,9 +272,24 @@ h2 {
     background-color: #888888;
 }
 
-#research_projects {
+.footer-distributed {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+    margin-top: 80px;
 }
 
+/* <==================================================>*/
+/* <=============== Home Page End ====================>*/
+/* <=================================================>*/
+
+/* <==================================================>*/
+/* <============== Projects Page =====================>*/
+/* <=================================================>*/
 #nav_projects_outer {
     padding: 40px;
     margin-top: -50px;
@@ -314,6 +322,111 @@ ledgend {
     float: right;
 }
 
+/* <==================================================>*/
+/* <=========== Projects page End ====================>*/
+/* <=================================================>*/
+
+
+/* <==================================================>*/
+/* <=========== Profile View Start ===================>*/
+/* <=================================================>*/
+.center-block {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-group .icon-addon .form-control {
+    border-radius: 0;
+}
+
+.icon-addon {
+    position: relative;
+    color: #555;
+    display: block;
+}
+
+.icon-addon:after,
+.icon-addon:before {
+    display: table;
+    content: " ";
+}
+
+.icon-addon:after {
+    clear: both;
+}
+
+.icon-addon.addon-md .glyphicon,
+.icon-addon .glyphicon,
+.icon-addon.addon-md .fa,
+.icon-addon .fa {
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    font-size: 14px;
+    width: 20px;
+    margin-left: -2.5px;
+    text-align: center;
+    padding: 10px 0;
+    top: 1px
+}
+
+.icon-addon.addon-lg .form-control {
+    line-height: 1.33;
+    height: 46px;
+    font-size: 18px;
+    padding: 10px 16px 10px 40px;
+}
+
+.icon-addon.addon-sm .form-control {
+    height: 30px;
+    padding: 5px 10px 5px 28px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.icon-addon.addon-lg .fa,
+.icon-addon.addon-lg .glyphicon {
+    font-size: 18px;
+    margin-left: 0;
+    left: 11px;
+    top: 4px;
+}
+
+.icon-addon.addon-md .form-control,
+.icon-addon .form-control {
+    padding-left: 30px;
+    float: right;
+    font-weight: normal;
+}
+
+.icon-addon.addon-sm .fa,
+.icon-addon.addon-sm .glyphicon {
+    margin-left: 0;
+    font-size: 12px;
+    left: 5px;
+    top: -1px
+}
+
+.icon-addon .form-control:focus + .glyphicon,
+.icon-addon:hover .glyphicon,
+.icon-addon .form-control:focus + .fa,
+.icon-addon:hover .fa {
+    color: #2580db;
+}
+#header_profiles{
+    margin: 60px;
+    padding: 60px;
+}
+
+#sort_profile_op{
+float: left;
+}
+
+#id_bar{
+    float: right;
+}
+
 #profiles_view .col-md-3 {
     background-color: #999999;
     padding: 20px;
@@ -325,6 +438,7 @@ ledgend {
     margin-left: auto;
     margin-right: auto
 }
+
 #profiles_view span{
     text-align: center;
 }
@@ -364,14 +478,55 @@ ledgend {
     transform: rotateY(0deg);
     background:  no-repeat;
 }
+/* <==================================================>*/
+/* <=========== Profile View End ====================>*/
+/* <=================================================>*/
 
-.footer-distributed {
-    background-color: #292c2f;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-    box-sizing: border-box;
-    width: 100%;
-    text-align: left;
-    font: normal 16px sans-serif;
-    padding: 45px 50px;
-    margin-top: 80px;
+/* <==================================================>*/
+/* <==================== Profile ====================>*/
+/* <=================================================>*/
+
+#my_prof_txt h2{
+    text-align: center;
 }
+
+#img_profile img{
+    float: left;
+}
+#img_profile strong{
+    font-size: large;
+}
+#mid_profiles{
+    padding: 20px;
+}
+#profile_tab{
+    padding: 40px;
+    margin-left: 30px;
+}
+/* <==================================================>*/
+/* <================= Profile End ====================>*/
+/* <=================================================>*/
+
+
+
+/* <==================================================>*/
+/* <==================== Events ======================>*/
+/* <=================================================>*/
+#header_events h2{
+    text-align: center;
+}
+#header_events{
+    padding: 30px;
+    margin-bottom: 20px;
+}
+#recent_events, #commingup_events{
+
+    padding: 40px;
+}
+#commingup_events a{
+    color: crimson;
+    text-decoration: none;
+}
+/* <==================================================>*/
+/* <================= Events End ====================>*/
+/* <=================================================>*/

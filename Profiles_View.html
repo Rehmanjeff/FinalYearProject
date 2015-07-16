@@ -27,22 +27,41 @@
     <script src="js/vendor/html5-3.6-respond-1.4.2.min.js"></script>
     <![endif]-->
 </head>
-
 <body>
-
 <div class="container">
-    <div id="header_profiles" class="row">
-        <div class="col-md"  style="padding: 40px;">
+    <div class="row">
+        <div  id="header_profiles" class="col-md">
             <div class="col-md-4">
-                <select>
-                    <option>
-                        HCI
-                    </option>
-                </select>
+                <div id="sort_profile_op">
+                    <div class="form-group">
+                        <div class="icon-addon addon-md">
+                            <select class="form-control">
+                                <option>Select Option</option>
+                                <option>Sample</option>
+                                <option>Sample</option>
+                            </select>
+                            <label for="email" class="glyphicon glyphicon-search" rel="tooltip" title="email"></label>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="col-md-8" style="float: right">
-                <label>Search</label> <input placeholder="Search by name">
+            <div class="col-md-8">
+                <div id="id_bar">
+                    <div class="form-group" style="width: 340px;">
+                        <div class="input-group input-group-md-4">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-filter"></i></span>
+                            <div class="icon-addon addon-md-4">
+                                <input type="text" placeholder="Search By Name" class="form-control" id="email">
+                                <label for="email" class="glyphicon glyphicon-search" rel="tooltip" title="Search By Name"></label>
+                            </div>
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">Go!</button>
+                    </span>
+                        </div>
+                    </div>
+
+                </div>
             </div>
 
         </div>
