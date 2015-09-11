@@ -211,6 +211,12 @@ div#nav {
     display: table;
 }
 
+.container #news #text {
+    height: 200px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
 #nav.col-md div#nav a:link, a:hover {
     text-decoration: none !important;
 }
