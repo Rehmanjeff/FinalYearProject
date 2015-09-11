@@ -198,10 +198,19 @@ div#nav {
     font-size: 15px !important;
 }
 
-.navbar-collapse ul, .navbar-header {
+.navbar-collapse ul{
     margin-right: 3px;
     text-align: center;
     margin-top: 17px;
+}
+
+
+.navbar-header {
+
+    width: 0%;
+    float: none;
+    margin: 0 auto;
+    display: table;
 }
 
 #nav.col-md div#nav a:link, a:hover {
@@ -254,7 +263,34 @@ h2 {
     height: 600px;
     background-color: #555;
 }
+/*
+ NEWS AND EVENTS
+ */
+#Events
+{
+    height: 200px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
 
+#text
+{
+    height: 200px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.container#News#text
+{
+    height: 200px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#News li
+{
+    width: 320px;
+}
 .item {
     background: #333;
     text-align: center;
@@ -275,9 +311,6 @@ h2 {
     padding: 30px;
 }
 
-#research_side_nav {
-    background-color: #888888;
-}
 
 .footer-distributed {
     background-color: #292c2f;
@@ -302,6 +335,12 @@ h2 {
     margin-top: -50px;
 }
 
+#research_side_nav {
+}
+#projects_name {
+    padding: 40px;
+    font-size: large;
+}
 .alert_success {
     margin: 0px;
     padding: 0px;
