@@ -17,9 +17,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <link rel="stylesheet" href="css/bootstrap-3.3.5-dist/css/bootstrap.min.css">
-    <script src="js/bootstrap-3.3.5-dist/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    <script src="bootstrap-3.3.5-dist/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
     <script src="/ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
     <link rel="stylesheet" href="css/normalize.min.css">
@@ -56,7 +56,7 @@
                 </div>
                 <!--End button & logo -->
                 <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav navbar">
                         <li>
                             <a href="index.html" target="_self"><span class="glyphicon glyphicon-home"></span> Home</a>
                             &nbsp;&nbsp;
@@ -196,12 +196,9 @@
             <div id="News" class="col-md-4" style="float: right;">
                 <h2>Updates</h2>
                 <ul class="nav nav-tabs">
-                    <li role="presentation" class="active" style=""><a href="News.html" target="_self"><strong>News</strong></a></li>
+                    <li role="presentation" class="active" style="width: 320px;"><a href="News.html" target="_self"><strong>News</strong></a></li>
                 </ul>
-                <div id="text" style="
-    height: 200px;
-    overflow: scroll;
-    overflow-x: hidden;">
+                <div id="text" style="height: 200px;    overflow: scroll;   overflow-x: hidden;">
                     <p>
                         Minions ipsum chasy butt jeje jiji chasy. Belloo! potatoooo butt para tú me want bananaaa!
                         Chasy ti aamoo! Baboiii. Butt wiiiii para tú baboiii gelatooo. Chasy bananaaaa butt po kass wiiiii.
@@ -216,27 +213,31 @@
                     </p>
                 </div>
             </div>
-
             <!--
              * First Div Left PCT GROUP END
              -->
 
-            <br>
+            <div style="clear: both;">
+                </div>
 
             <!--
              * First Div Right Events
              -->
             <div id="Events" class="col-md-4" style="float: right;">
                 <ul class="nav nav-tabs">
-                    <li role="presentation" class="active"><a href="News.html" target="_self">Events</a></li>
+                    <li role="presentation" class="active" style=" width: 320px;"><a href="News.html" target="_self">Events</a></li>
                 </ul>
                 <br>
 
-                Minions ipsum chasy butt jeje jiji chasy. Belloo! potatoooo butt para tú me want bananaaa!
-                Chasy ti aamoo! Baboiii. Butt wiiiii para tú baboiii gelatooo. Chasy bananaaaa butt po kass wiiiii.
-                Tulaliloo la bodaaa gelatooo tatata bala tu la bodaaa jiji para tú bappleees belloo!
-                Hahaha poulet tikka masala. Jeje poopayee hahaha baboiii ti aamoo! Hahaha me want bananaaa!
-                Me want bananaaa!
+                <div id="text" style="height: 200px;    overflow: scroll;   overflow-x: hidden;">
+                    <p>
+                        Minions ipsum chasy butt jeje jiji chasy. Belloo! potatoooo butt para tú me want bananaaa!
+                        Chasy ti aamoo! Baboiii. Butt wiiiii para tú baboiii gelatooo. Chasy bananaaaa butt po kass wiiiii.
+                        Tulaliloo la bodaaa gelatooo tatata bala tu la bodaaa jiji para tú bappleees belloo!
+                        Hahaha poulet tikka masala. Jeje poopayee hahaha baboiii ti aamoo! Hahaha me want bananaaa!
+                        Me want bananaaa!
+                    </p>
+                </div>
             </div>
             <div id="Research-Contributions" class="col-md-7">
                 <h3><strong>Research Contributions</strong></h3>
@@ -286,31 +287,67 @@
                     tempus sit amet libero quis gravida.
                 </p>
             </div>
-            <div id="gallery" class="col-md-4" style="float: right;">
-                <h3><strong>Gallery</strong></h3>
-                <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="500x500"
-                     src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgdmlld0JveD0iMCAwIDUwMCA1MDAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxkZWZzLz48cmVjdCB3aWR0aD0iNTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iI0VFRUVFRSIvPjxnPjx0ZXh0IHg9IjE5MC4zMTI1IiB5PSIyNTAiIHN0eWxlPSJmaWxsOiNBQUFBQUE7Zm9udC13ZWlnaHQ6Ym9sZDtmb250LWZhbWlseTpBcmlhbCwgSGVsdmV0aWNhLCBPcGVuIFNhbnMsIHNhbnMtc2VyaWYsIG1vbm9zcGFjZTtmb250LXNpemU6MjNwdDtkb21pbmFudC1iYXNlbGluZTpjZW50cmFsIj41MDB4NTAwPC90ZXh0PjwvZz48L3N2Zz4="
-                     data-holder-rendered="true">
+        </div>
+
+        <div class="container">
+            <div class="col-md">
+                <div class="well well-lg">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img src="//placehold.it/180x100" class="img-responsive">
+                        </div>
+                        <div class="col-sm-6">
+                            Some text here
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+
         <div class="col-md-12">
             <footer class="footer-distributed">
                 <div class="footer-left">
-                    <p class="footer-links">
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="index.html" target="_self"><span class="glyphicon glyphicon-home"></span> Home</a>
+                                &nbsp;&nbsp;
+                            </li>
 
-                        <a href="#">Home</a>
-                        ·
-                        <a href="#">Blog</a>
-                        ·
-                        <a href="#">Pricing</a>
-                        ·
-                        <a href="#">About</a>
-                        ·
-                        <a href="#">Faq</a>
-                        ·
-                        <a href="#">Contact</a>
-                    </p>
+                            <li>
+                                <a href="index.html" target="_self"><span class="glyphicon glyphicon-globe"></span> Research</a>
+                                &nbsp;&nbsp;
+                            </li>
 
+                            <li>
+                                <a href="publications.html" target="_self"><span class="glyphicon glyphicon-list-alt"></span>
+                                    Publications</a>&nbsp;&nbsp;&nbsp;
+                            </li>
+
+                            <li>
+                                <a href="projects.html" target="_self"><span class="glyphicon glyphicon-book"></span> Projects</a>&nbsp;&nbsp;&nbsp;
+                            </li>
+
+                            <li>
+                                <a href="News.html" target="_self"><span class="glyphicon glyphicon-calendar"></span>Events</a>&nbsp;&nbsp;&nbsp;
+                            </li>
+
+                            <li>
+                                <a href="Events.html" target="_self"><span class="glyphicon glyphicon-calendar"></span>
+                                    News</a>&nbsp;&nbsp;&nbsp;
+                            </li>
+
+                            <li>
+                                <a href="Profiles_View.html" target="_self"><span class="glyphicon glyphicon-user"></span> Knowledge
+                                    Power </a>&nbsp;&nbsp;&nbsp;
+                            </li>
+
+                            <li>
+                                <a href="index.html" target="_self"><span class="glyphicon glyphicon-alt"></span> About
+                                    Us</a>
+                            </li>
+                        </ul>
+                    </div>
                     <p>People Centered Technology © 2015</p>
                 </div>
             </footer>

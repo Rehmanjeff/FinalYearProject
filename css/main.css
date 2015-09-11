@@ -186,12 +186,13 @@ lyhidden.focusable:focus {
                                 PCT TEAM EDITS
  ==========================================================================*/
 
+
 /* <==================================================>*/
 /* <================== Home page ====================>*/
 /* <=================================================>*/
 .container {
-    /*
-        background-color: #2ecc71 !important;*/
+
+        background-color: #2ecc71 !important;
 }
 
 div#nav {
@@ -203,10 +204,7 @@ div#nav {
     text-align: center;
     margin-top: 17px;
 }
-
-
 .navbar-header {
-
     width: 0%;
     float: none;
     margin: 0 auto;
@@ -273,7 +271,7 @@ h2 {
     overflow-x: hidden;
 }
 
-#text
+#News #text
 {
     height: 200px;
     overflow: scroll;
