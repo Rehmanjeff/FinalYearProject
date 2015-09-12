@@ -192,13 +192,20 @@ lyhidden.focusable:focus {
 /* <=================================================>*/
 .container {
 
-        background-color: #2ecc71 !important;
+
 }
+
+/*****************
+      NAV BAR
+ ******************/
 
 div#nav {
     font-size: 15px !important;
 }
-
+.nav li
+{
+    font-size: medium;
+}
 .navbar-collapse ul{
     margin-right: 3px;
     text-align: center;
@@ -209,12 +216,6 @@ div#nav {
     float: none;
     margin: 0 auto;
     display: table;
-}
-
-.container #news #text {
-    height: 200px;
-    overflow: scroll;
-    overflow-x: hidden;
 }
 
 #nav.col-md div#nav a:link, a:hover {
@@ -267,34 +268,30 @@ h2 {
     height: 600px;
     background-color: #555;
 }
-/*
+
+/*****************
  NEWS AND EVENTS
- */
-#Events
+ ******************/
+#News, #Events
 {
+    float: right;
+}
+
+#News #text, #Events #text {
     height: 200px;
     overflow: scroll;
     overflow-x: hidden;
 }
 
-#News #text
-{
-    height: 200px;
-    overflow: scroll;
-    overflow-x: hidden;
-}
-
-.container#News#text
-{
-    height: 200px;
-    overflow: scroll;
-    overflow-x: hidden;
-}
-
-#News li
+#Events li, #News li
 {
     width: 320px;
 }
+
+/*****************
+ NEWS AND EVENTS END
+ ******************/
+
 .item {
     background: #333;
     text-align: center;
@@ -313,6 +310,15 @@ h2 {
 
 #clearfix{
     padding: 30px;
+}
+/********************************************
+        *****************
+        *IMAGE GALLERY VIEW
+        *******************
+*********************************************/
+
+div#img_gallery{
+    margin-top: 30px;
 }
 
 
