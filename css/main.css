@@ -1,0 +1,600 @@
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+
+}
+
+@media print,
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visual,
+lyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/*==========================================================================
+                                PCT TEAM EDITS
+ ==========================================================================*/
+
+
+/* <==================================================>*/
+/* <================== Home page ====================>*/
+/* <=================================================>*/
+.container {
+
+
+}
+
+/*****************
+      NAV BAR
+ ******************/
+
+div#nav {
+    font-size: 15px !important;
+}
+.nav li
+{
+    font-size: medium;
+}
+.navbar-collapse ul{
+    margin-right: 3px;
+    text-align: center;
+    margin-top: 17px;
+}
+.navbar-header {
+    width: 0%;
+    float: none;
+    margin: 0 auto;
+    display: table;
+}
+
+#nav.col-md div#nav a:link, a:hover {
+    text-decoration: none !important;
+}
+
+#menu.col-md {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    margin-bottom: -90px;
+}
+
+#slideShow {
+    position: relative;
+    margin-top: 180px;
+}
+
+h2 {
+    margin: 0;
+    color: #666;
+    padding-top: 90px;
+    font-size: 52px;
+    font-family: "trebuchet ms", sans-serif;
+}
+
+/* Bump up size of carousel content */
+.carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+}
+
+/* Carousel base class */
+.carousel {
+}
+
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+    z-index: 1;
+}
+
+#myCarousel, .carousel-inner, #slideShow.col-md {
+    height: 600px;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+    height: 600px;
+    background-color: #555;
+}
+
+/*****************
+ NEWS AND EVENTS
+ ******************/
+#News, #Events
+{
+    float: right;
+}
+
+#News #text, #Events #text {
+    height: 200px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#Events li, #News li
+{
+    width: 320px;
+}
+
+/*****************
+ NEWS AND EVENTS END
+ ******************/
+
+.item {
+    background: #333;
+    text-align: center;
+    height: 600px !important;
+}
+
+.carousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 600px;
+}
+
+#Organization-and-Head{
+}
+
+#clearfix{
+    padding: 30px;
+}
+/********************************************
+        *****************
+        *IMAGE GALLERY VIEW
+        *******************
+*********************************************/
+
+div#img_gallery{
+    margin-top: 30px;
+}
+
+
+.footer-distributed {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+    margin-top: 80px;
+}
+
+/* <==================================================>*/
+/* <=============== Home Page End ====================>*/
+/* <=================================================>*/
+
+/* <==================================================>*/
+/* <============== Projects Page =====================>*/
+/* <=================================================>*/
+#nav_projects_outer {
+    padding: 40px;
+    margin-top: -50px;
+}
+
+#research_side_nav {
+}
+#projects_name {
+    padding: 40px;
+    font-size: large;
+}
+.alert_success {
+    margin: 0px;
+    padding: 0px;
+    height: 1px;
+}
+
+ledgend {
+    float: right;
+    margin-top: 23px;
+}
+
+#project_name h3 {
+    float: left;
+}
+
+#inner_projects {
+    padding: 30px;
+}
+
+#all_done {
+    padding: 0px;
+}
+
+#project_name h4 {
+    float: right;
+}
+
+/* <==================================================>*/
+/* <=========== Projects page End ====================>*/
+/* <=================================================>*/
+
+
+/* <==================================================>*/
+/* <=========== Profile View Start ===================>*/
+/* <=================================================>*/
+.center-block {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-group .icon-addon .form-control {
+    border-radius: 0;
+}
+
+.icon-addon {
+    position: relative;
+    color: #555;
+    display: block;
+}
+
+.icon-addon:after,
+.icon-addon:before {
+    display: table;
+    content: " ";
+}
+
+.icon-addon:after {
+    clear: both;
+}
+
+.icon-addon.addon-md .glyphicon,
+.icon-addon .glyphicon,
+.icon-addon.addon-md .fa,
+.icon-addon .fa {
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    font-size: 14px;
+    width: 20px;
+    margin-left: -2.5px;
+    text-align: center;
+    padding: 10px 0;
+    top: 1px
+}
+
+.icon-addon.addon-lg .form-control {
+    line-height: 1.33;
+    height: 46px;
+    font-size: 18px;
+    padding: 10px 16px 10px 40px;
+}
+
+.icon-addon.addon-sm .form-control {
+    height: 30px;
+    padding: 5px 10px 5px 28px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.icon-addon.addon-lg .fa,
+.icon-addon.addon-lg .glyphicon {
+    font-size: 18px;
+    margin-left: 0;
+    left: 11px;
+    top: 4px;
+}
+
+.icon-addon.addon-md .form-control,
+.icon-addon .form-control {
+    padding-left: 30px;
+    float: right;
+    font-weight: normal;
+}
+
+.icon-addon.addon-sm .fa,
+.icon-addon.addon-sm .glyphicon {
+    margin-left: 0;
+    font-size: 12px;
+    left: 5px;
+    top: -1px
+}
+
+.icon-addon .form-control:focus + .glyphicon,
+.icon-addon:hover .glyphicon,
+.icon-addon .form-control:focus + .fa,
+.icon-addon:hover .fa {
+    color: #2580db;
+}
+#header_profiles{
+    margin: 60px;
+    padding: 60px;
+}
+
+#sort_profile_op{
+float: left;
+}
+
+#id_bar{
+    float: right;
+}
+
+#profiles_view .col-md-3 {
+    background-color: #999999;
+    padding: 20px;
+    border: white solid 10px;
+}
+
+#profiles_view img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#profiles_view span{
+    text-align: center;
+}
+
+.caption {
+    display: block;
+}
+
+.flip-container {
+    margin: 50px;
+    perspective: 1000;
+    display: inline-block;
+}
+.flip-container:hover .card {
+    transform: rotateY(180deg);
+}
+.card, .front, .back {
+    width: 150px;
+    height: 150px;
+}
+.card {
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+}
+.front {
+    z-index: 1;
+    transform: rotateY(180deg);
+    background: no-repeat;
+}
+.back {
+    z-index: 2; /* back side, placed above front */
+    transform: rotateY(0deg);
+    background:  no-repeat;
+}
+/* <==================================================>*/
+/* <=========== Profile View End ====================>*/
+/* <=================================================>*/
+
+/* <==================================================>*/
+/* <==================== Profile ====================>*/
+/* <=================================================>*/
+
+#my_prof_txt h2{
+    text-align: center;
+}
+
+#img_profile img{
+    float: left;
+}
+#img_profile strong{
+    font-size: large;
+}
+#mid_profiles{
+    padding: 20px;
+}
+#profile_tab{
+    padding: 40px;
+    margin-left: 30px;
+}
+/* <==================================================>*/
+/* <================= Profile End ====================>*/
+/* <=================================================>*/
+
+
+
+/* <==================================================>*/
+/* <==================== Events ======================>*/
+/* <=================================================>*/
+#header_events h2{
+    text-align: center;
+}
+#header_events{
+    padding: 30px;
+    margin-bottom: 20px;
+}
+#recent_events, #commingup_events{
+
+    padding: 40px;
+}
+#commingup_events a{
+    color: crimson;
+    text-decoration: none;
+}
+/* <==================================================>*/
+/* <================= Events End ====================>*/
+/* <=================================================>*/
+
+
+/* <==================================================>*/
+/* <================= Students  ====================>*/
+/* <=================================================>*/
+#padd_student_view{
+    padding: 60px;
+    margin-top: 60px;
+}
+/* <==================================================>*/
+/* <================= Students End ====================>*/
+/* <=================================================>*/
