@@ -269,9 +269,27 @@ h2 {
     background-color: #555;
 }
 
+
+/*****************
+ NAV Bar Custom
+ ******************/
+
+.navbar-brand
+{
+    font-size: 29px;
+}
+/*****************
+ NAV Bar custom
+ ******************/
+
+
 /*****************
  NEWS AND EVENTS
  ******************/
+ h3
+ {
+    font-size: 28px;
+ }
 #News, #Events
 {
     float: right;
@@ -279,7 +297,7 @@ h2 {
 
 #News #text, #Events #text {
     height: 200px;
-    overflow: scroll;
+    /*overflow: scroll;*/
     overflow-x: hidden;
 }
 
@@ -287,6 +305,8 @@ h2 {
 {
     width: 320px;
 }
+#Tweets
+{float: right;}
 
 /*****************
  NEWS AND EVENTS END
@@ -585,6 +605,32 @@ float: left;
 }
 /* <==================================================>*/
 /* <================= Events End ====================>*/
+/* <=================================================>*/
+
+
+
+
+/* <==================================================>*/
+/* <===================   Footer ====================>*/
+/* <=================================================>*/
+
+
+#footer {
+  bottom: 0;
+  /* Set the fixed height of the footer here */
+  height: 280px;
+  background: 
+  /* color overlay */ 
+    linear-gradient(
+      rgba(240, 212, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ),
+    /* image to overlay */
+    url(http://images.cdn.fotopedia.com/_avPIZmqM3w-7z161LH_268-hd.jpg);
+}
+
+/* <==================================================>*/
+/* <===================Footer END====================>*/
 /* <=================================================>*/
 
 

@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
     
-    <title>Research Group</title>
+    <title>People Centered Technology</title>
     <?php include('headerScript.php'); ?>
 </head>
 <body>
@@ -79,13 +79,12 @@
         <div class="container">
             <div class="row">
                 
-            <div id="Organization-and-Head" class="col-md-8" style="">
-                <h2>Organization and Head</h2>
+            <div id="Organization-and-Head" class="col-md-7" style="">
+                <h3><strong>PCT Research Group</strong></h3>
 
                 <div class="clearfix">
-                    <img style="float: left" class="img-responsive-circle" hspace="20"
+                     <img style="float: left" class="img-circle" hspace="20"
                          src="https://sites.google.com/site/pctresearchgroup/_/rsrc/1413366230493/home/library.jpg?height=252&width=250"/>
-
                     <p>People Centered Technology Research Group is working on designing systems which are more useful
                         for humans.
                         The group believes that mere availability of technology is not sufficient for users who lacks in
@@ -101,34 +100,30 @@
                 </div>
             </div>
             
-            <div id="home_news" class="col-md-4">
-                <h2><img src="img/icon news.png" width="50" height="50"><img src="img/name news.png" width="150" height="50"></h2>
-                <marquee direction="up" onMouseOver="this.stop();" onMouseOut="this.start();" height="200" scrollamount="3" scrolldelay="0" width="100%" left="10" top="0">
-                    <div>
-                        
-                <?php
-                    $link=  mysqli_connect('localhost', 'root', '', 'pctresearchgroup');
-                    $sql="SELECT * FROM news";
-                    $result=  mysqli_query($link, $sql);
-                    while($row=  mysqli_fetch_assoc($result)){
-                        if($row["active"]=='Y' AND $row["inactiveDate"]>=Date("Y-m-d")){
-                        echo '<p><img src="img/icon news.png" width="15" height="15">
-                                <b><u>'.$row["subject"].'</u></b>
-                                '.$row["description"].'
-                            </p>';
-                        }
-                    }
-                ?>
+            <div id="News" class="col-md-4">
+            <h3><strong>Updates</strong></h3>
+                <ul class="nav nav-tabs">
+                    <li role="presentation" class="active"><a href="News.html" target="_self"><strong>News</strong></a></li>
+                </ul>
+
+                <marquee direction="up" onMouseOver="this.stop();" onMouseOut="this.start();" height="180" scrollamount="3" scrolldelay="0" width="100%" left="10" top="0">
+                    <div>     
+                        <?php
+                            $link=  mysqli_connect('localhost', 'root', '', 'pctresearchgroup');
+                            $sql="SELECT * FROM news";
+                            $result=  mysqli_query($link, $sql);
+                                while($row=  mysqli_fetch_assoc($result)){
+                                    if($row["active"]=='Y' AND $row["inactiveDate"]>=Date("Y-m-d")){
+                                    echo '<p><img src="img/icon news.png" width="15" height="15"><b><u>'.$row["subject"].'</u></b>'.$row["description"].'</p>';
+                                }
+                            }
+                        ?>
                     </div>
-                </marquee>
-                
-                
-                
-            </div>
-            <a href="News.html">View More Details</a>
+                </marquee>   
+                <a href="News.html">View More Details</a>
             </div>
             
-            <div id="Research-Contributions" class="col-md-8">
+            <div id="Research-Contributions" class="col-md-7">
                 <h3><strong>Research Contributions</strong></h3>
 
                 <p>
@@ -147,23 +142,30 @@
                 </p>
             </div>
 
-            <div id="Tweets" class="col-md-4" style="">
-                <h3><strong>Tweets</strong></h3>
-                <a class="twitter-timeline" href="https://twitter.com/twitter" data-widget-id="619794175991549953"
-                   height="300">Tweets by @twitter</a>
-                <script>!function (d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-                    if (!d.getElementById(id)) {
-                        js = d.createElement(s);
-                        js.id = id;
-                        js.src = p + "://platform.twitter.com/widgets.js";
-                        fjs.parentNode.insertBefore(js, fjs);
-                    }
-                }(document, "script", "twitter-wjs");</script>
-            </div>
-            <div id="Opportunities" class="col-md-8">
-                <h3><strong>Opportunities</strong></h3>
 
+            <div id="Events" class="col-md-4">
+                <ul class="nav nav-tabs">
+                    <li role="presentation" class="active"><a href="Events.html" target="_self"><strong>Events</strong></a></li>
+                </ul>
+                <marquee direction="up" onMouseOver="this.stop();" onMouseOut="this.start();" height="180" scrollamount="3" scrolldelay="0" width="100%" left="10" top="0">
+                    <div>     
+                        <?php
+                            $link=  mysqli_connect('localhost', 'root', '', 'pctresearchgroup');
+                            $sql="SELECT * FROM news";
+                            $result=  mysqli_query($link, $sql);
+                                while($row=  mysqli_fetch_assoc($result)){
+                                    if($row["active"]=='Y' AND $row["inactiveDate"]>=Date("Y-m-d")){
+                                    echo '<p><img src="img/icon news.png" width="15" height="15"><b><u>'.$row["subject"].'</u></b>'.$row["description"].'</p>';
+                                }
+                            }
+                        ?>
+                    </div>
+                </marquee>   
+                <a href="Events.html">View More Details</a>
+            </div>
+            
+            <div id="Opportunities" class="col-md-7">
+                <h3><strong>Opportunities</strong></h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis in nunc vel cursus. Proin
                     elementum pellentesque laoreet. Nam vitae orci ullamcorper, luctus justo ac, dapibus ipsum. Nam
@@ -179,11 +181,23 @@
                     tempus sit amet libero quis gravida.
                 </p>
             </div>
-            
+            <div id="Tweets" class="col-md-4" style="">
+                <h3><strong>Tweets</strong></h3>
+                <a class="twitter-timeline" href="https://twitter.com/twitter" data-widget-id="619794175991549953"
+                   height="300">Tweets by @twitter</a>
+                <script>!function (d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                    if (!d.getElementById(id)) {
+                        js = d.createElement(s);
+                        js.id = id;
+                        js.src = p + "://platform.twitter.com/widgets.js";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }
+                }(document, "script", "twitter-wjs");</script>
+            </div>
         </div>
-        <div class="container">
+        <div style="clear:both;">
         </div>
-            
         <div class="container">
             <div class="col-md">
                 <div class="well well-lg">
@@ -198,10 +212,10 @@
                 </div>
             </div>
         </div>
-        <?php include('footer.php');?>
     </div>
 </div>
 
+        <?php include('footer.php');?>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
     (function (b, o, i, l, e, r) {

@@ -3,7 +3,7 @@
         <div class="collapse navbar-collapse">
             <div class="row" style="margin: 30px">
                 <div class="col-md-6">
-                    <a href="adminPortal.php" class="navbar-brand"><img src="img/Logo1.png" width="400px" height="50px;"></a>
+                    <a href="Register.php" class="navbar-brand"><img src="img/Logo1.png" width="400px" height="50px;"></a>
                 </div>
                 <div class="col-md-3">
                     <input type="text" placeholder="Email" class="form-control"/>

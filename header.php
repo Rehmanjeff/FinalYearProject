@@ -11,18 +11,18 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="#" class="navbar-brand">PCT Research group</a>
+                    <h1><a href="#" class="navbar-brand"><strong>PCT Research Group</strong></a></h1>
                 </div>
                 <!--End button & logo -->
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar">
                         <li>
-                            <a href="index.html" target="_self"><span class="glyphicon glyphicon-home"></span> Home</a>
+                            <a href="index.php" target="_self"><span class="glyphicon glyphicon-home"></span> Home</a>
                             &nbsp;&nbsp;
                         </li>
 
                         <li>
-                            <a href="index.html" target="_self"><span class="glyphicon glyphicon-globe"></span> Research</a>
+                            <a href="index.php" target="_self"><span class="glyphicon glyphicon-globe"></span> Research</a>
                             &nbsp;&nbsp;
                         </li>
 
@@ -36,11 +36,11 @@
                         </li>
 
                         <li>
-                            <a href="News.html" target="_self"><span class="glyphicon glyphicon-calendar"></span>Events</a>&nbsp;&nbsp;&nbsp;
+                            <a href="news.php" target="_self"><span class="glyphicon glyphicon-calendar"></span>Events</a>&nbsp;&nbsp;&nbsp;
                         </li>
 
                         <li>
-                            <a href="Events.html" target="_self"><span class="glyphicon glyphicon-calendar"></span>
+                            <a href="news.php" target="_self"><span class="glyphicon glyphicon-calendar"></span>
                                 News</a>&nbsp;&nbsp;&nbsp;
                         </li>
 

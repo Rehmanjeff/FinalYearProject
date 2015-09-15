@@ -19,7 +19,3 @@
 
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
-
-    <!--[if lt IE 9]>
-    <script src="js/vendor/html5-3.6-respond-1.4.2.min.js"></script>
-    <![endif]-->
