@@ -69,10 +69,10 @@
                                 $result=  mysqli_query($link, $sql);
                                 while($row=  mysqli_fetch_assoc($result)){
                                     if($row["active"]=='Y' AND Date("Y-m-d") <= $row["inactiveDate"]){
-                                    echo '<div id="newsPane" style="margin-top: 10px; background-color: #f2dede">
+                                    echo '<div id="newsPane"">
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <i><b style="color:red">'.$row["date"].'</i></b>
+                                                    <i><b style="color:red">'.$row["startDate"].'</i></b>
                                                 </div>
                                                 <div class="col-md-4">
                                                     In Activate on:'.$row["inactiveDate"].'
