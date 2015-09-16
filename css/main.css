@@ -283,9 +283,9 @@ h2 {
  ******************/
 
 
-/*****************
- NEWS AND EVENTS
- ******************/
+/*******************************
+ NEWS AND EVENTS Front End Page
+ *******************************/
  h3
  {
     font-size: 28px;
@@ -308,9 +308,25 @@ h2 {
 #Tweets
 {float: right;}
 
-/*****************
- NEWS AND EVENTS END
- ******************/
+/**********************************
+ NEWS AND EVENTS Front END Page END
+ ***********************************/
+
+/***************************
+News and Events Backend Page
+***************************/
+#newsPane
+{
+    margin-top: 10px;
+    border: outset;
+}
+#admin_news
+{
+    padding: 150px;
+}
+/***************************
+News and Events Backend END
+***************************/
 
 .item {
     background: #333;
@@ -622,7 +638,7 @@ float: left;
   background: 
   /* color overlay */ 
     linear-gradient(
-      rgba(240, 212, 0, 0.45), 
+      #e7e7e7, 
       rgba(0, 0, 0, 0.45)
     ),
     /* image to overlay */

@@ -72,7 +72,7 @@
                                     echo '<div id="newsPane" style="margin-top: 10px; background-color: #f2dede">
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <i><b style="color:red">'.$row["date"].'</i></b> 
+                                                    <i><b style="color:red">'.$row["date"].'</i></b>
                                                 </div>
                                                 <div class="col-md-4">
                                                     In Activate on:'.$row["inactiveDate"].'
