@@ -208,6 +208,20 @@
                         }
                         ?>
                     </form>
+                    <?php
+                    if(isset($_GET["remove"])){
+                    $sql="UPDATE  news SET active = 'N' WHERE id = ".$_GET["remove"];
+                    mysqli_query($link, $sql);
+                    unset($_GET);
+                    die("<script>location.href = 'apNews.php' </script>");
+                    }
+                    if(isset($_GET["add"])){
+                    $sql="UPDATE  news SET active = 'Y' WHERE id = ".$_GET["add"];
+                    mysqli_query($link, $sql);
+                    unset($_GET);
+                    die("<script>location.href = 'aPNews.php' </script>");
+                    }
+                    ?>
                 </div>
             <div id="About" class="tab-pane fade">
                 <h3>6214</h3>
