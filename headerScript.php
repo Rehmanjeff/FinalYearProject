@@ -10,11 +10,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/main.css">
-
     <script src="js/jquery-1.2.6.min"></script>
     <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
 
@@ -22,3 +17,8 @@
 
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+
+    <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
