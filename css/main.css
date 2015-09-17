@@ -195,6 +195,24 @@ lyhidden.focusable:focus {
 
 }
 
+#para
+{
+    font-size: 11pt;
+    font-family: Sans-serif;
+    line-height: 15pt;
+    max-height: 30pt;
+    overflow: hidden;
+    position: relative;
+}
+
+#para:after
+{
+    display: block;
+    position: absolute;
+    content: "...";
+    bottom: 0;
+    right: 0;
+}
 /*****************
       NAV BAR
  ******************/
@@ -392,7 +410,14 @@ div#img_gallery{
 {
     height: 32px;
 }
+#contact_info
+{
+    float: right;
+}
 
+#contact_input, #contact_name
+{
+}
 #select_degree select
 {
     height: 32px;
