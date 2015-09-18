@@ -192,30 +192,16 @@ lyhidden.focusable:focus {
 /* <=================================================>*/
 .container {
 
-
 }
 
-#para
-{
-    font-size: 11pt;
-    font-family: Sans-serif;
-    line-height: 15pt;
-    max-height: 30pt;
-    overflow: hidden;
-    position: relative;
+#closeable-ofi {
+    height:50px;
+    overflow:hidden;
 }
 
-#para:after
-{
-    display: block;
-    position: absolute;
-    content: "...";
-    bottom: 0;
-    right: 0;
-}
-/*****************
-      NAV BAR
- ******************/
+/***************************************************
+ ##############     NAV BAR       ##################
+ ***************************************************/
 
 div#nav {
     font-size: 15px !important;
@@ -288,17 +274,13 @@ h2 {
 }
 
 
-/*****************
- NAV Bar Custom
- ******************/
-
 .navbar-brand
 {
     font-size: 29px;
 }
-/*****************
- NAV Bar custom
- ******************/
+/************************************
+ ####### NAV Bar custom END #########
+ ************************************/
 
 
 /*******************************
@@ -365,9 +347,9 @@ News and Events Backend END
     padding: 30px;
 }
 /********************************************
-        *****************
+ ********************************************
         *IMAGE GALLERY VIEW
-        *******************
+ ********************************************
 *********************************************/
 
 div#img_gallery{
@@ -397,9 +379,12 @@ div#img_gallery{
 
 #inner_row
 {
-    margin-top: 200px;
 }
 
+#All_nav_pills
+{
+    margin-top: 200px;
+}
 #first_row img
 {
     width:170px;
@@ -687,6 +672,38 @@ float: left;
 /* <==================================================>*/
 /* <================= Events End ====================>*/
 /* <=================================================>*/
+
+#nav-tabs
+{
+    margin-top: 150px;
+}
+/* <==============================================================>*/
+/* <=================Teacher Prof View Student ====================>*/
+/* <===============================================================>*/
+
+#main_tpvs
+{
+    margin-top: 150px;
+}
+#teacher_name_position_website
+{
+    margin-top: 20px;
+}
+#subject_display
+{
+    margin-top: 15px;
+}
+#subjects, #teacher_timings
+{
+    background-color: lightgray;
+}
+#teacher_lecture
+{
+    text-align: center;
+}
+/* <=======================================================================>*/
+/* <================= Teacher Prof View for Students End ====================>*/
+/* <==========================================================================>*/
 
 
 

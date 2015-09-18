@@ -27,6 +27,27 @@
         <div class="tab-content">
             <div class="tab-pane home">
                 <br>
+                <div class="form-group">
+                    <label for="usr">Title:</label>
+                    <input type="text" class="form-control" id="usr">
+                </div><br>
+
+                <div class="form-group">
+                    <label for="comment">Group: </label>
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div><br>
+
+                <div class="form-group">
+                    <label for="comment">Research Contribution: </label>
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div><br>
+
+                <div class="form-group">
+                    <label for="comment">Opportunities: </label>
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div><br>
+
+                <button class="btn btn-success" type="submit" data-dismiss="modal">Submit</button>
             </div>
 
             <div class="tab-pane active admin_news">
@@ -38,11 +59,9 @@
             </div>
             <div class="tab-pane admin_gallery">Gallery</div>
         </div>
-
-
         <hr>
-        </div>
     </div>
+</div>
 </body>
 
 </html>

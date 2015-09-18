@@ -1,58 +1,57 @@
 
 <br>
-                <button type="button" class="btn btn-info btn-primary" data-toggle="modal" data-target="#myModal">ADD News</button>
-                <br>
-                <div id="myModal" class="modal fade" role="dialog">
-                    <div class="modal-dialog">
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">News Update</h4>
-                            </div>
-                            <div class="modal-body">
-                                <div class="form-group">
-                                    <label for="usr">Title:</label>
-                                    <input type="text" class="form-control" id="usr">
-                                </div><br>
+<button type="button" class="btn btn-info btn-primary" data-toggle="modal" data-target="#myModal1">ADD News</button>
+<br>
+<div id="myModal1" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">News Update</h4>
+            </div>
 
-                                <div class="form-group">
-                                    <label for="comment">Description: </label>
-                                    <textarea class="form-control" rows="5" id="comment"></textarea>
-                                </div>
-                                <div class='col-md-6' style="float: left;">
-                                    <div class="form-group">
-                                        <label class="control-label" for="exampleInputEmail">Pick Date:</label>
-                                        <div class="">
-                                            <input name="DATEFROM" id="dateFrom" type="date" class="form-control" />
-                                        </div>
-                                    </div>
-                                    <script type="text/javascript">
-    $(document).ready(function () {
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="usr">Title:</label>
+                    <input type="text" class="form-control" id="usr">
+                </div><br>
 
-        $('#dateFrom').datepicker({
-                                                format: "dd/mm/yyyy",
-                                                orientation: "top"
-                                            });
-                                        });
-                                    </script>
-                                </div>
-                                <br><br><br><br>
-                            </div>
-                            <div class="modal-footer">
-                                <button class="btn btn-warning" data-dismiss="modal">Close</button>
-                                <button class="btn btn-success" type="submit" data-dismiss="modal">Submit</button>
-                            </div>
+                <div class="form-group">
+                    <label for="comment">Description: </label>
+                    <textarea class="form-control" rows="5" id="comment"></textarea>
+                </div>
 
-                            <?php
-                            if (isset($_POST["submitNews"])){
-                                $sql="INSERT INTO news (date,subject,description,active,inactiveDate) VALUES('".Date("Y/m/d")."','".$_POST["subject"]."','".$_POST["description"]."','Y','".$_POST["inactiveDate"]."')";
-                                mysqli_query($link, $sql);
+                <div class='col-md-6' style="float: left;">
+                    <div class="form-group">
+                        <label class="control-label" for="exampleInputEmail">Pick Date:</label>
+
+                        <div class="">
+                            <input name="DATEFROM" id="dateFrom" type="date" class="form-control" />
+                        </div>
+                    </div>
+
+                    <script type="text/javascript">
+                    $(document).ready(function () {
+                    $('#dateFrom').datepicker({format: "dd/mm/yyyy", orientation: "top"});});
+                    </script>
+                </div>
+                <br><br><br><br>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-warning" data-dismiss="modal">Close</button>
+                <button class="btn btn-success" type="submit" data-dismiss="modal">Submit</button>
+            </div>
+
+            <?php
+            if (isset($_POST["submitNews"])){
+                $sql="INSERT INTO news (date,subject,description,active,inactiveDate) VALUES('".Date("Y/m/d")."','".$_POST["subject"]."','".$_POST["description"]."','Y','".$_POST["inactiveDate"]."')";
+                mysqli_query($link, $sql);
                             }
-                            ?>
-</div>
-
-</div>
+            ?>
+        </div>
+    </div>
 </div>
 
 <?php
