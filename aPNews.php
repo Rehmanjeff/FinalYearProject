@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <?php include('headerScript.php');?>
-        <title>Admin Portal</title>
-    </head>
-    <body>
-        
-        <div class="container" >
+
             <div class="row" style="margin-top: 150px; background-color: #a6e1ec" >
-            <?php include('navTopAdmin.php');?><br>
+        
                 <form action="" method="POST">
                     <div class="row">
                         <div class="col-md-2">
@@ -146,6 +138,3 @@
                     ?>
                 </div>
             </div>
-        </div>
-    </body>
-</html>

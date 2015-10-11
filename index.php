@@ -9,8 +9,8 @@
     <?php include('headerScript.php'); ?>
 </head>
 <body>
-
-<div class="container-fluid">
+<div class = "container-fluid">
+<div class="container">
     <div class="row">
         <?php include('header.php');?>
 
@@ -24,45 +24,13 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img src="img/slide.jpg" style="width:100%" class="img-responsive">
-
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <h1>Bootstrap 3 Carousel Layout</h1>
-
-                                <p></p>
-
-                                <p><a class="btn btn-lg btn-primary" href="http://getbootstrap.com">Learn More</a>
-                                </p>
-                            </div>
-                        </div>
+                        <img src="img/img1.jpg"  class="img-responsive">
                     </div>
                     <div class="item">
-                        <img src="img/slide2.jpg" style="width:100%" class="img-responsive">
-
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <h1>Changes to the Grid</h1>
-
-                                <p>Bootstrap 3 still features a 12-column grid, but many of the CSS class names have
-                                    completely changed.</p>
-
-                                <p><a class="btn btn-large btn-primary" href="#">Learn more</a></p>
-                            </div>
-                        </div>
+                        <img src="img/img3.jpg"  class="img-responsive">
                     </div>
                     <div class="item">
-                        <img src="img/slide3.jpg" style="width:100%" class="img-responsive">
-
-                        <div class="container">
-                            <div class="carousel-caption">
-                                <h1>Percentage-based sizing</h1>
-
-                                <p>With "mobile-first" there is now only one percentage-based grid.</p>
-
-                                <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a></p>
-                            </div>
-                        </div>
+                        <img src="img/img2.jpg"  class="img-responsive">
                     </div>
                 </div>
                 <!-- Controls -->
@@ -78,49 +46,41 @@
         </div>
         <div class="container">
             <div class="row">
-
-            <div id="Organization-and-Head" class="col-md-7" style="">
-                <h3><strong>PCT Research Group</strong></h3>
-
-                <div class="clearfix">
-                     <img style="float: left" class="img-circle" hspace="20"
-                         src="https://sites.google.com/site/pctresearchgroup/_/rsrc/1413366230493/home/library.jpg?height=252&width=250"/>
-                    <p>People Centered Technology Research Group is working on designing systems which are more useful
-                        for humans.
-                        The group believes that mere availability of technology is not sufficient for users who lacks in
-                        literacy.
-                        Dr. Nadeem Ahmad Ch is supervising the PCT research group. He earned his dual degree PhD in HCI
-                        from Politecnico di Torino, Italy and University of Potsdam, Germany in April 2014.
-                        Nadeem is working in areas of human achine interfaces for low literacy users. He is
-                        investigating the perceptual, cognitive and literacy factors involved in accessing information
-                        and communication technologies. His research work is on different perspectives of human-computer
-                        interaction, social computing, user scenarios, UX specs, task flows, storyboards, prototypes,
-                        localization, accessibility and visual design.
-                    </p>
-                </div>
-            </div>
+                <div class="inner_row">
+                <?php 
+                    $sql="SELECT * FROM basicdata";
+                    $result=  mysqli_query($link, $sql);
+                    $row=  mysqli_fetch_assoc($result);
+                    echo '
+                        <div id="Organization-and-Head" class="col-md-7" style="">
+                            <h3><strong>'.$row["title"].'</strong></h3>
+                            
+                            <div class="clearfix">
+                                <img style="float: left" class="img-circle" hspace="20" src="img/library.jpg"/>
+                                    <p>'.$row["text"].'</p>
+                            </div>
+                        </div>';?>
 
             <div id="News" class="col-md-4">
-            <h3><strong>Updates</strong></h3>
-                <ul class="nav nav-tabs">
-                    <li role="presentation" class="active"><a href="News.html" target="_self"><strong>News</strong></a></li>
-                </ul>
-
+                <h3><strong>Updates</strong></h3>
+                    <ul class="nav nav-tabs">
+                        <li role="presentation" class="active"><a href="News.html" target="_self"><strong>News</strong></a></li>
+                    </ul>
                 <marquee direction="up" onMouseOver="this.stop();" onMouseOut="this.start();" height="180" scrollamount="3" scrolldelay="0" width="100%" left="10" top="0">
-                    <div>
-                        <?php
-                            $link=  mysqli_connect('localhost', 'root', '', 'pctresearchgroup');
-                            $sql="SELECT * FROM news";
-                            $result=  mysqli_query($link, $sql);
-                                while($row=  mysqli_fetch_assoc($result)){
-                                    if($row["active"]=='Y' AND $row["inactiveDate"]>=Date("Y-m-d")){
+                <div>
+                    <?php
+                        $link=  mysqli_connect('localhost', 'root', '', 'pctresearchgroup');
+                        $sql="SELECT * FROM news";
+                        $result=  mysqli_query($link, $sql);
+                            while($row=  mysqli_fetch_assoc($result)){
+                                if($row["active"]=='Y' AND $row["inactiveDate"]>=Date("Y-m-d")){
                                     echo '<p><img src="img/icon news.png" width="15" height="15"><b><u>'.$row["subject"].'</u></b>'.$row["description"].'</p>';
                                 }
                             }
                         ?>
                     </div>
                 </marquee>
-                <a href="News.html">View More Details</a>
+                <a href="News.php">View More Details</a>
             </div>
 
             <div id="Research-Contributions" class="col-md-7">
@@ -161,7 +121,7 @@
                         ?>
                     </div>
                 </marquee>
-                <a href="Events.html">View More Details</a>
+                <a href="Events.php">View More Details</a>
             </div>
 
             <div id="Opportunities" class="col-md-7">
@@ -198,7 +158,7 @@
         </div>
         <div style="clear:both;">
         </div>
-        <div class="container">
+        <!--<div class="container">
             <div class="col-md">
                 <div class="well well-lg">
                     <div class="row">
@@ -211,12 +171,15 @@
                     </div>
                 </div>
             </div>
+        </div>-->
         </div>
     </div>
 </div>
 
         <?php include('footer.php');?>
-<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+</div>
+</div>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
     (function (b, o, i, l, e, r) {
         b.GoogleAnalyticsObject = l;

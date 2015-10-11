@@ -16,12 +16,16 @@
     <div class="row" style="padding: 250px;">
         <h3>Manage Contents: </h3>
         <!-- Nav tabs -->
-        <ul class="nav nav-tabs" role="tablist">
+        <ol class="nav nav-tabs" role="tablist">
             <li><a href=".home" role="tab" data-toggle="tab">Home</a></li>
             <li class="active" ><a href=".admin_news" role="tab" data-toggle="tab">News</a></li>
             <li><a href=".admin_events" role="tab" data-toggle="tab">Events</a></li>
             <li><a href=".admin_gallery" role="tab" data-toggle="tab">Gallery</a></li>
-        </ul>
+            <li><a href=".admin_gallery" role="tab" data-toggle="tab">Upload Photo</a></li>
+            <li><a href=".admin_gallery" role="tab" data-toggle="tab">Users</a></li>
+            <?php echo '<li><a /*href="request.php"*/ href=".request" role="tab" data-toggle="tab">New Requests<span class="badge">0</span></a></li>';?>
+            <li><a href=".admin_gallery" role="tab" data-toggle="tab">Slider</a></li>
+        </ol>
 
         <!-- Tab panes -->
         <div class="tab-content">

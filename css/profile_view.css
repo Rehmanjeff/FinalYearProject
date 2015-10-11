@@ -1,0 +1,162 @@
+.container
+{
+  margin-top: 200px;
+}
+.row
+{
+  margin-right: 0px;
+  margin-left: 0px;
+}
+/* <==================================================>*/
+/* <=========== Profile View Start ===================>*/
+/* <=================================================>*/
+.center-block {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-group .icon-addon .form-control {
+    border-radius: 0;
+}
+
+.icon-addon {
+    position: relative;
+    color: #555;
+    display: block;
+}
+
+.icon-addon:after,
+.icon-addon:before {
+    display: table;
+    content: " ";
+}
+
+.icon-addon:after {
+    clear: both;
+}
+
+.icon-addon.addon-md .glyphicon,
+.icon-addon .glyphicon,
+.icon-addon.addon-md .fa,
+.icon-addon .fa {
+    position: absolute;
+    z-index: 2;
+    left: 10px;
+    font-size: 14px;
+    width: 20px;
+    margin-left: -2.5px;
+    text-align: center;
+    padding: 10px 0;
+    top: 1px
+}
+
+.icon-addon.addon-lg .form-control {
+    line-height: 1.33;
+    height: 46px;
+    font-size: 18px;
+    padding: 10px 16px 10px 40px;
+}
+
+.icon-addon.addon-sm .form-control {
+    height: 30px;
+    padding: 5px 10px 5px 28px;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.icon-addon.addon-lg .fa,
+.icon-addon.addon-lg .glyphicon {
+    font-size: 18px;
+    margin-left: 0;
+    left: 11px;
+    top: 4px;
+}
+
+.icon-addon.addon-md .form-control,
+.icon-addon .form-control {
+    padding-left: 30px;
+    float: right;
+    font-weight: normal;
+}
+
+.icon-addon.addon-sm .fa,
+.icon-addon.addon-sm .glyphicon {
+    margin-left: 0;
+    font-size: 12px;
+    left: 5px;
+    top: -1px
+}
+
+.icon-addon .form-control:focus + .glyphicon,
+.icon-addon:hover .glyphicon,
+.icon-addon .form-control:focus + .fa,
+.icon-addon:hover .fa {
+    color: #2580db;
+}
+#header_profiles{
+    padding: 60px;
+}
+
+#sort_profile_op{
+float: left;
+}
+
+#id_bar{
+    float: right;
+}
+
+#profiles_view .col-md-3 {
+    /*background-color: #999999;*/
+    padding: 20px;
+    border: white solid 10px;
+}
+
+#profiles_view img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#profiles_view span{
+    text-align: center;
+}
+
+.caption {
+    display: block;
+}
+
+.flip-container {
+    margin: 50px;
+    perspective: 1000;
+    display: inline-block;
+}
+.flip-container:hover .card {
+    transform: rotateY(180deg);
+}
+.card, .front, .back {
+    width: 150px;
+    height: 150px;
+}
+.card {
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+}
+.front {
+    z-index: 1;
+    transform: rotateY(180deg);
+    background: no-repeat;
+}
+.back {
+    z-index: 2; /* back side, placed above front */
+    transform: rotateY(0deg);
+    background:  no-repeat;
+}
+/* <==================================================>*/
+/* <=========== Profile View End ====================>*/
+/* <=================================================>*/

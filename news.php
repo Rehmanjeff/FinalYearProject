@@ -1,10 +1,8 @@
-<html class="no-js" lang=""> 
-    <html lang="en">
+<html lang="en">
         <head>
             <title>News | Research Group</title>
-    <?php include('headerScript.php'); ?>
+            <?php include('headerScript.php'); ?>
         </head>
-        <body>
         <body>
             
             <div class="container" >
