@@ -46,7 +46,7 @@
                         </li>
 
                         <li>
-                            <a href="news.php" target="_self"><span class="glyphicon glyphicon-calendar"></span>
+                            <a href="Newsh.php" target="_self"><span class="glyphicon glyphicon-calendar"></span>
                                 News</a>&nbsp;&nbsp;&nbsp;
                         </li>
 

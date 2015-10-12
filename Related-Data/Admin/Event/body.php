@@ -16,15 +16,15 @@
 echo '<form action="" method="POST">';
         if(!isset($_GET["newEvent"])){
         echo '<div class="row">
-                <a href="?newEvent"  class="btn btn-primary" >Add New Event</a>    
+                <a href="?newEvent"  target="_self" class="btn btn-primary" >Add New Event</a>    
             </div>
             <div class="row"></div>
             <div class="row">
-                    <div class="col-md-6">';
+                    <div class="col-md">';
                         include("Related-Data/Admin/Event/viewInactiveEvent.php");
                        
                     echo '</div>
-                    <div class="col-md-6">';
+                    <div class="col-md">';
                         include("Related-Data/Admin/Event/viewActiveEvent.php");
                         
                     echo '</div>

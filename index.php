@@ -64,7 +64,7 @@
             <div id="News" class="col-md-4">
                 <h3><strong>Updates</strong></h3>
                     <ul class="nav nav-tabs">
-                        <li role="presentation" class="active"><a href="News.html" target="_self"><strong>News</strong></a></li>
+                        <li role="presentation" class="active"><a href="Newsh.php" target="_self"><strong>News</strong></a></li>
                     </ul>
                 <marquee direction="up" onMouseOver="this.stop();" onMouseOut="this.start();" height="180" scrollamount="3" scrolldelay="0" width="100%" left="10" top="0">
                 <div>
@@ -80,7 +80,7 @@
                         ?>
                     </div>
                 </marquee>
-                <a href="News.php">View More Details</a>
+                <a href="Newsh.php">View More Details</a>
             </div>
 
             <div id="Research-Contributions" class="col-md-7">

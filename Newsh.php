@@ -1,41 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Events</title>
-
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
-    <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/main.css">
-
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-
-    <!--[if lt IE 9]>
-    <script src="js/vendor/html5-3.6-respond-1.4.2.min.js"></script>
-    <![endif]-->
+       <meta charset="UTF-8">
+    <title>News | Research Group</title>
+        <?php include('headerScript.php');?>
+        <link rel="stylesheet" href="css/events.css">
 </head>
 <body>
 <div class="container">
+    <header>
+        <?php include('header.php');?>
+    </header>
     <div class="row">
         <div id="header_events" class="col-md">
-            <h2>News</h2>
+            <h3>News</h3>
         </div>
     </div>
     <div class="row">
         <div class="col-md">
             <div id="recent_events" class="col-md-4">
-                <h3>Recent</h3>
+                <h3>Recents</h3>
                 <div id="inside_events">
                     <a href="" target="_blank">This is the test haeder of the events which will be shown.</a>
                     <p>Little detail abou the even what this event is about and where it's gona be to know about
@@ -56,7 +40,7 @@
                 </div>
             </div>
             <div id="commingup_events" class="col-md-8">
-                <h3>Latest</h3>
+                <h3>Comming Up</h3>
                 <div id="inside_events">
                     <a href="" target="_blank">This is the test haeder of the events which will be shown.</a>
                     <p>Little detail abou the even what this event is about and where it's gona be to know about

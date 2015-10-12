@@ -6,11 +6,9 @@
     });
         
 </script>
-<br/><br/>
-<div class="row">
-    <div class="col-md-6">
+<h3>Add New Event</h3>
         <form action="" method="POST">
-            <div class="container-fluid">
+            <div class="col-md-12" style="padding:65px;">
                 <div class="row">
                     <div class="col-md-3" >
                         <a data-toggle="tooltip" title="Title of Event"  >
@@ -85,9 +83,7 @@
                 
             </div>
         </form>
-    </div>
-    <?php
-    ?>  
+    
     <div class="col-md-6">
         <?php
         ?>
