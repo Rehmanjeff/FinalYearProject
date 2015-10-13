@@ -141,19 +141,21 @@
                     tempus sit amet libero quis gravida.
                 </p>
             </div>
+                    
+                    
             <div id="Tweets" class="col-md-4" style="">
                 <h3><strong>Tweets</strong></h3>
-                <a class="twitter-timeline" href="https://twitter.com/twitter" data-widget-id="619794175991549953"
-                   height="300">Tweets by @twitter</a>
-                <script>!function (d, s, id) {
-                    var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
-                    if (!d.getElementById(id)) {
-                        js = d.createElement(s);
-                        js.id = id;
-                        js.src = p + "://platform.twitter.com/widgets.js";
-                        fjs.parentNode.insertBefore(js, fjs);
-                    }
-                }(document, "script", "twitter-wjs");</script>
+                    <a height="300" class="twitter-timeline" href="https://twitter.com/ResearchPCT" 
+                       data-widget-id="653587063682519041">Tweets by @ResearchPCT</a>
+                    <script>
+                        !function(d,s,id){
+                            var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+                            if(!d.getElementById(id)){
+                                js=d.createElement(s);
+                                js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+                                fjs.parentNode.insertBefore(js,fjs);
+                            }
+                        }(document,"script","twitter-wjs");</script>
             </div>
         </div>
         <div style="clear:both;">

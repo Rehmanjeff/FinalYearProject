@@ -6,7 +6,7 @@
 
             <div class="footer-left">
 
-                <h3>Company<span>logo</span></h3>
+                <h3>PCT<span>Research Group</span></h3>
 
                 <p class="footer-links">
                     <a href="#">Home</a>
