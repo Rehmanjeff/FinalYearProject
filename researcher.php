@@ -18,7 +18,7 @@
         
     </head>
     <body>
-        <?php include('Related-Data/Researcher/nav.php');?>
+        <?php include('header.php');?>
         <?php include 'Related-Data/Researcher/research/editPersonalInfo.php'; ?>
         <?php include 'Related-Data/Researcher/research/queryUserInfo.php'; ?>
         <div class="row profile" id="admin_profile">
@@ -62,7 +62,7 @@
 					<ul class="nav">
                         
                         <li class="active">
-                            <a href="#my_profile" data-toggle="tab">
+                            <a href="#home" data-toggle="tab">
                             <i class="glyphicon glyphicon-home"></i>
                             MY Profile </a>
 				        </li>	
@@ -110,7 +110,11 @@
                         </div>
                         
                         <div class="tab-pane fade" id="my_qualifications">
-                            Qualifications
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <?php include 'res_qualification.php'; ?>
+                                </div>
+                            </div>
                         </div>
                         
                         <div class="tab-pane fade" id="my_publications">

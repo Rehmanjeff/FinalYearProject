@@ -10,8 +10,8 @@
                 <div class="col-md-12">
                     <div class="col-md-6" >
                         <h4>Personal Information</h4>
-                        <input type="text" placeholder="Enter Your Name" value="'.$row["profile_name"].'" class="form-control" id=""><br>
-                        <input type="text" placeholder="Enter Designation" value="'.$row["profile_designation"].'" class="form-control" id=""><br>
+                        <input type="text" placeholder="Enter Your Name" name="name" value="'.$row["profile_name"].'" class="form-control" id=""><br>
+                        <input type="text" placeholder="Enter Designation" name="designation" value="'.$row["profile_designation"].'" class="form-control" id=""><br>
                         <span>Joined Since: 12/08/2015</span>
                     </div>
                             
@@ -19,9 +19,9 @@
                         <div id="contact_info">
                             <h4>Contact Information</h4>
                                 <div id="contact_name">
-                                    <input type="email" placeholder="Enter Email Address" value="'.$row["profile_email"].'" class="form-control" id=""><br>
-                                    <input type="number" placeholder="Enter Phone Number" class="form-control" value="'.$row["profile_phone"].'"><br>
-                                    <input type="number" placeholder="Enter Fax" class="form-control" value="'.$row["profile_mobile"].'">
+                                    <input type="email" name="email"  placeholder="Enter Email Address" value="'.$row["profile_email"].'" class="form-control" id=""><br>
+                                    <input type="number" name="phone" placeholder="Enter Phone Number" class="form-control" value="'.$row["profile_phone"].'"><br>
+                                    <input type="number" name="fax" placeholder="Enter Fax" class="form-control" value="'.$row["profile_fax"].'">
                                 </div>
                         </div>
                     </div>            
@@ -29,14 +29,16 @@
                     <div class="col-md-12">
                         <h1>Something About You:</h1>
                         <textarea placeholder="Something about You!!!" rows="2" name="details" class="form-control">'.$row["profile_details"].'</textarea>
-                    <div class="modal-footer" style="float:right">
-                        <div class="col-md-6">
-                            <input type="submit" name="updatePersonalInfo" class="btn btn-primary"/>    
+                        
+                        <div class="modal-footer" style="float:right">
+                            <div class="col-md-6">
+                                <input type="submit" name="updatePersonalInfo" class="btn btn-primary"/>    
+                            </div>
                         </div>
                     </div>
-                    </div>
                 </div>
-             </div>';
+             </div>
+        </div>';
  
 ?>
     
@@ -59,10 +61,11 @@
 -->
 
 </div>
-<?php    if(isset($_POST["updatePersonalInfo"])){
-    echo '<br/><br/><br/><br/><br/><br/><br/>'.$sql="UPDATE userprofile SET profile_name='".$_POST["name"]."', profile_designation='".$_POST["designation"]."',"
+<?php    
+    if(isset($_POST["updatePersonalInfo"])){
+        echo '<br/><br/><br/><br/><br/><br/><br/>'.$sql="UPDATE userprofile SET profile_name='".$_POST["name"]."',  profile_designation='".$_POST["designation"]."',"
     . "profile_details='".$_POST["details"]."',profile_email='".$_POST["email"]."',profile_address='".$_POST["address"]."'"
-    . ",profile_phone='".$_POST["phone"]."',profile_mobile='".$_POST["mobile"]."'"
+    . ",profile_phone='".$_POST["phone"]."',profile_mobile='".$_POST["mobile"]."'"."',profile_fax='".$_POST["fax"]."'"
             
     . " WHERE userId_FK =".$FK;
     mysqli_query($link, $sql);
