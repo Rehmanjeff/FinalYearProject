@@ -1,8 +1,5 @@
 <?php
 echo '<div class="row">
-        <div class="col-md-6">
-            <h3>Student Projects</h3>
-        </div>
         <div class="col-md-4">
             <form action="" method="POST">
                 <a href="#supervisorStatus" data-toggle="collapse"><b><u><i>Supervisory Status:</i></u></b><br/></a>
@@ -11,6 +8,11 @@ echo '<div class="row">
                     <label class="radio-inline"><Input type="radio" name="available">Not Available</label>  
                 </div>
             </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Student Projects</h3>
         </div>
     </div>';
 $sql="SELECT * FROM projects WHERE userId_FK =".$FK;

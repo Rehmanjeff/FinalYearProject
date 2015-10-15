@@ -167,11 +167,8 @@ Licensed under MIT
                     </div>
                 </div>
             </div>
-		</div>
-                
-                                
-            
-		</div>
+		</div>                  
+    </div>
 	</div>
 </div>
 <center>

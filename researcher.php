@@ -118,21 +118,27 @@
                         </div>
                         
                         <div class="tab-pane fade" id="my_publications">
-                            <div class="col-md-10">
-                                <div class="row">
-                                    Publications
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <?php include 'res_publications.php'; ?>
                                 </div>
                             </div>
                         </div>
                         
-                        <div class="tab-pane fade" id="my_projects">
+                        <div class="tab-pane fade" id="students_projects">
                             <div class="row">
-                                academic resources
+                                <div class="col-md-12">
+                                    <?php include 'res_studentProject.php'; ?>
+                                </div>
                             </div>
                         </div>
                     
                         <div class="tab-pane fade" id="academic_resources">
-                            Academic Resources
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <?php include 'res_academicresources.php'; ?>
+                                </div>
+                            </div>
                         </div>
                     
                     </div>

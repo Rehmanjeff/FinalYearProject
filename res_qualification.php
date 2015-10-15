@@ -1,6 +1,4 @@
 <?php include 'Related-Data/Researcher/verifyAccess.php'; ?>
-<?php include('Related-Data/Researcher/nav.php');?>
-
 <div class="row">
     <div class="col-md-4">
         <?php include 'Related-Data/Researcher/Qualification/addQualification.php'; ?>
