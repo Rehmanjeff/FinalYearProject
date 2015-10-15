@@ -59,6 +59,10 @@
                             <a href="index.php" target="_self"><span class="glyphicon glyphicon-alt"></span> About
                                 Us</a>
                         </li>
+                        
+                        <li class="last-item">
+                            <a href="registration.php" target="_self"><span class="glyphicon glyphicon-pencil"></span> Register/Login</a>
+                        </li>
                     </ul>
                 </div>
             </nav>

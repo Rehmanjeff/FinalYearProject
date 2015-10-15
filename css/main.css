@@ -191,7 +191,7 @@ lyhidden.focusable:focus {
 /* <================== Home page ====================>*/
 /* <=================================================>*/
 .container {
-    
+
     -webkit-box-shadow: 2px -5px 65px 14px rgba(0,0,0,0.34);
     -moz-box-shadow: 2px -5px 65px 14px rgba(0,0,0,0.34);
     box-shadow: 2px -5px 65px 14px rgba(0,0,0,0.34);
@@ -200,11 +200,6 @@ lyhidden.focusable:focus {
 .inner_row
 {
     margin: 15px;
-}
-.container-fluid{
-    -webkit-box-shadow: 2px -5px 65px 14px rgba(0,0,0,0.34);
-    -moz-box-shadow: 2px -5px 65px 14px rgba(0,0,0,0.34);
-    box-shadow: 2px -5px 65px 14px rgba(0,0,0,0.34);
 }
 .container
 {/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f3f3f3+50,ededed+51,ffffff+100;White+Gloss+%232 */
@@ -416,11 +411,15 @@ body {
   padding: 20px 0 10px 0;
   background: #fff;
 }
-
+input[type=file]{
+  width: 50px;
+  background-color: blue;
+}
 .profile-userpic img {
+  display: block;
   float: none;
   margin: 0 auto;
-  width: 70%;
+  width: 50%;
   height: 60%;
   -webkit-border-radius: 50% !important;
   -moz-border-radius: 50% !important;
@@ -463,7 +462,7 @@ body {
 .profile-userbuttons .btn:last-child {
   margin-right: 0px;
 }
-    
+
 .profile-usermenu {
   margin-top: 30px;
 }
@@ -709,10 +708,10 @@ ledgend {
   bottom: 0;
   /* Set the fixed height of the footer here */
   height: 280px;
-  background: 
-  /* color overlay */ 
+  background:
+  /* color overlay */
     linear-gradient(
-      #e7e7e7, 
+      #e7e7e7,
       rgba(0, 0, 0, 0.45)
     ),
     /* image to overlay */

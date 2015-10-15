@@ -175,7 +175,7 @@ Licensed under MIT
 	</div>
 </div>
 <center>
-<strong>Powered by <a href="http://j.mp/metronictheme" target="_blank">KeenThemes</a></strong>
+    <strong><a href="index.php" target="_blank">PCT Research Group</a></strong>
 </center>
 <br>
 <br>

@@ -6,30 +6,30 @@
 
             <div class="footer-left">
 
-                <h3>PCT<span>Research Group</span></h3>
+                <h3>PCT <span> Research Group</span></h3>
 
                 <p class="footer-links">
                     <a href="#">Home</a>
                     &nbsp;
-                    <a href="#">Blog</a>
+                    <a href="publications.php">Publications</a>
                     &nbsp;
-                    <a href="#">Pricing</a>
+                    <a href="projects.php">Projects</a>
                     &nbsp;
-                    <a href="#">About</a>
+                    <a href="Newsh.php">News</a>
                     &nbsp;
-                    <a href="#">Faq</a>
+                    <a href="Events.php">Events</a>
                     &nbsp;
                     <a href="#">Contact</a>
                 </p>
 
-                <p class="footer-company-name">Company Name &copy; 2015</p>
+                <p class="footer-company-name">PCT Research Group &copy; 2015</p>
             </div>
 
             <div class="footer-center">
 
                 <div>
                     <i class="fa fa-map-marker"></i>
-                    <p><span>21 Revolution Street</span> Paris, France</p>
+                    <p><span>Defence Road</span> Lahore, Pakistan</p>
                 </div>
 
                 <div>
@@ -39,7 +39,7 @@
 
                 <div>
                     <i class="fa fa-envelope"></i>
-                    <p><a href="mailto:support@company.com">support@company.com</a></p>
+                    <p><a href="mailto:support@company.com">support@pct.com</a></p>
                 </div>
 
             </div>

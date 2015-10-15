@@ -3,7 +3,6 @@
     <?php include('headerScript.php'); ?>
 </head>
 <body>
-    
         <?php include 'Related-Data/Researcher/research/editPersonalInfo.php'; ?>
         <?php include 'Related-Data/Researcher/research/queryUserInfo.php'; ?>
 <div class="container">
