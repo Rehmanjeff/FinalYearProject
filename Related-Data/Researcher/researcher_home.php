@@ -38,11 +38,7 @@
                     </div>
                 </div>
              </div>
-        </div>';
- 
-?>
-    
-        
+        </div>';?>
 <!--
     <div class="col-md-1">
                         <div class="dropdown">
@@ -63,12 +59,14 @@
 </div>
 <?php    
     if(isset($_POST["updatePersonalInfo"])){
-        echo '<br/><br/><br/><br/><br/><br/><br/>'.$sql="UPDATE userprofile SET profile_name='".$_POST["name"]."',  profile_designation='".$_POST["designation"]."',"
+        echo $sql="UPDATE userprofile SET profile_name='".$_POST["name"]."',  profile_designation='".$_POST["designation"]."',"
     . "profile_details='".$_POST["details"]."',profile_email='".$_POST["email"]."',profile_address='".$_POST["address"]."'"
     . ",profile_phone='".$_POST["phone"]."',profile_mobile='".$_POST["mobile"]."'"."',profile_fax='".$_POST["fax"]."'"
-            
     . " WHERE userId_FK =".$FK;
     mysqli_query($link, $sql);
     die("<script>location.href='researcher.php'</script>");
 
+    $sql="SELECT * FROM userprofile WHERE userId_FK = ".$FK;
+    $result=  mysqli_query($link, $sql);
+    $row=  mysqli_fetch_assoc($result);
 }?>
