@@ -159,7 +159,7 @@
                                 <input type="password" name="password" placeholder="Password" class="form-control"/>
                             </div>
                             <div class="col-md-2">
-                                <input type="submit" name="login" class="btn btn-primary" value="Login"/>
+                                <input type="submit" name="login" class="btn btn-lg btn-primary" value="Login"/>
                             </div>
                         </div>
                         <div class="row">
@@ -215,18 +215,16 @@
 			                        	<input type="text" name="form-first-name" placeholder="Full name..." class="form-first-name form-control" id="form-first-name">
                                          <label id="Lable1"> </label>
                                         <span id="result"></span>
-                                        
 			                        </div>
                                     
 			                        <div class="form-group">
 			                        	<input type="email" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">
-                                        <input type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">
-			
-			                        </div>
+			                        <lable></lable>
+                                        <span></span>
+                                    </div>
                                     
 			                        <div class="form-group">
 			                        	<input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
-			
 			                        </div>
                                     
 			                        <div class="form-group">
