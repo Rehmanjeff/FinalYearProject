@@ -128,20 +128,22 @@ Licensed under MIT
                                 </div>
                     </div>
                         <div class="tab-pane fade" id="slider">
-                            Slider
+                            <div class="col-md-10">
+                                <div class="row">
+                                    Slider
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="users">
                             <div class="col-md-10">
                                 <div class="row">
-                                    <div class="col-md-12">
                                         <?php include 'Related-Data/Admin/User/bodyUser.php'  ?>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="new_requests">
                             <div class="row">
-                                <div class="col-md-12">
+                                <div class="col-md-10">
                                     <?php include 'Related-Data/Admin/User/request/bodyUserRequest.php'  ?>
                                 </div>
                             </div>
@@ -151,14 +153,17 @@ Licensed under MIT
                             <div class="col-md-12">
                                 <?php/* include ('aPNews.php')*/;?>
                             </div>
--->
-                            <div class="col-md-12">
-                                <?php include ('Related-Data/Admin/News/body.php');?>
+    -->                     <div class="row">
+                                <div class="col-md-10">
+                                    <?php include ('Related-Data/Admin/News/body.php');?>
+                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="events">          
                             <div class="row" >
+                                <div class="col-md-10">
                                     <?php include 'Related-Data/Admin/Event/body.php';?>
+                                </div>
                             </div> 
                         </div>
                         <div class="tab-pane fade" id="gallery">

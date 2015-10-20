@@ -1,5 +1,4 @@
-<?php include 'Related-Data/Researcher/verifyAccess.php'; ?>
-<?php include('Related-Data/Researcher/nav.php');?>
+
     <div class="col-md-3">
         <?php include 'Related-Data/Researcher/AcademicResources/sidebar.php'; ?>
     </div>

@@ -32,6 +32,103 @@
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+        
+        <script type="text/javascript">
+            // User name TExt Box Start
+            $(document).ready(function() {
+                $('.form-first-name').keyup(function() {
+                    $('#result').html(isValid($('.form-first-name').val()));
+                });
+                // isvalid Function for User name 
+
+                function isValid(firstName)
+                {
+                    var validity = 0;
+                    data = $('.form-first-name').val();
+                    var lenght = data.length;
+                    
+                    if (lenght < 1) {
+                        alert('User name cannot be blanck');
+                        $('#Lable1').text('User Name cannot be blank');
+                    }
+                    if (firstName.match(/([!,%,&,@,#,$,^,*,?,_,~])/) || firstName.match(/(.*[!,%,&,@,#,$,^,*,?,_,~].*[!,%,&,@,#,$,^,*,?,_,~])/))
+                    {
+                        // alert('Special characters are not allowed');
+                        $('#result').removeClass();
+                        $('#result').addClass('Special charaters are not Allowed');
+                        // $('#Lable1').text('Special characters are Not Allowed');
+                        //$('#lab').removeClass('LabelHide');
+                        //$('#lab').addClass('LabelShow');
+                        return 'Special characters are not allowed';
+                    }
+
+                    if (firstName.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/))
+                    {
+                        validity = validity + 1;
+                        return true;
+                    }
+
+                    if (firstName.match(/([0-9])/))
+                    {
+                        //alert('Numbers are not allowed');
+                        $('#result').removeClass();
+                        $('#result').addClass('Numebrs are not Allowed');
+                        //$('#lab').removeClass('LabelHide');
+                        //$('#lab').addClass('LabelShow');
+                        return 'Numbers are not allowed';
+                    }
+                }
+            });
+            // User name ended
+            
+
+
+
+
+
+            // Email checking 
+            $(document).ready(function (e) {
+                $('#SubmitButton').click(function () {
+                    var email = $('#form-email').val();
+                    // Checking Empty Fields
+                    if ($.trim(email).length == 0 || $("#form-first-name").val() == "" || $("#form-password").val() == "" || $("#Password1").val()=="") {
+                        alert('All fields are Required');
+                        e.preventDefault();
+                    }
+                    if (validateEmail(email)) {
+                        alert('Thanks for Registeration, We will get back to you');
+                    }
+                    else {
+                        alert('Invalid Email Address');
+                        e.preventDefault();
+                    }
+                });
+            });
+            // Function that validates email address through a regular expression.
+            function validateEmail(pEmail) {
+                var filterValue = /^[\w\-\.\+]+\@[a-zA-Z0-9\.\-]+\.[a-zA-z0-9]{2,4}$/;
+                if (filterValue.test(pEmail)) {
+                    if (pEmail.indexOf('@uol.edu.pk', pEmail.length - '@uol.edu.pk'.length) != -1)
+                    {
+                        return true;
+                    }
+                    else {
+                        alert("Email Must be like(yourName@uol.edu.pk)");
+                        return false;
+                    }
+                }
+                else
+                {
+                    return false;
+                }
+            }
+
+            $('#SubmitButton').validateEmail();
+            //Email checking end
+
+        </script>
+
 
     </head>
 
@@ -51,8 +148,7 @@
 						<span class="icon-bar"></span>
 					</button>
 					<h1><a class="navbar-brand" href="index.html"><strong>People Centered Technology</strong></a></h1>
-				</div>
-                <div class="form-group">
+				</div>                <div class="form-group">
                 <form action="" method="POST">
                     <div class="col-md-5" style="color: white; float:right">
                         <div class="row">
@@ -117,10 +213,14 @@
 			                    <form role="form" action="" method="post" class="registration-form">
 			                    	<div class="form-group">
 			                        	<input type="text" name="form-first-name" placeholder="Full name..." class="form-first-name form-control" id="form-first-name">
+                                         <label id="Lable1"> </label>
+                                        <span id="result"></span>
+                                        
 			                        </div>
                                     
 			                        <div class="form-group">
-			                        	<input type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">
+			                        	<input type="email" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">
+                                        <input type="text" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">
 			
 			                        </div>
                                     
@@ -130,7 +230,7 @@
 			                        </div>
                                     
 			                        <div class="form-group">
-			                        	<input type="password" name="form-password" placeholder="Re-enter Password..." class="form-email form-control" id="form-password">
+			                        	<input type="password" name="form-password" placeholder="Re-enter Password..." class="form-email form-control" id="Password1">
 			
 			                        </div>
                                     <div class="form-group">
@@ -144,7 +244,7 @@
                                     </div>
                                         
                                     
-			                        <button type="submit" class="btn">Give it to me!</button>
+			                        <button type="submit" class="btn" id="SubmitButton">Give it to me!</button>
 			                    </form>
                                 <?php
                     if(isset($_POST["submit"])){

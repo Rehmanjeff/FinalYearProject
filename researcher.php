@@ -21,6 +21,7 @@
         <?php include('header.php');?>
         <?php include 'Related-Data/Researcher/research/editPersonalInfo.php'; ?>
         <?php include 'Related-Data/Researcher/research/queryUserInfo.php'; ?>
+        <div class="container">
         <div class="row profile" id="admin_profile">
 		<div class="col-md-3">
 			<div class="profile-sidebar">
@@ -146,7 +147,7 @@
             </div>
 		</div>                  
     </div>
-        
+        </div>
     </div>
         
         

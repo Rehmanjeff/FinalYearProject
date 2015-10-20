@@ -1,5 +1,4 @@
 
-<?php include 'Related-Data/Researcher/verifyAccess.php'; ?>
     <div class="col-md-5">
         <?php include 'Related-Data/Researcher/project/addProject.php'; ?>
     </div>
