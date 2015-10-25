@@ -54,12 +54,9 @@
                     }
                     if (firstName.match(/([!,%,&,@,#,$,^,*,?,_,~])/) || firstName.match(/(.*[!,%,&,@,#,$,^,*,?,_,~].*[!,%,&,@,#,$,^,*,?,_,~])/))
                     {
-                        // alert('Special characters are not allowed');
                         $('#result').removeClass();
                         $('#result').addClass('Special charaters are not Allowed');
-                        // $('#Lable1').text('Special characters are Not Allowed');
-                        //$('#lab').removeClass('LabelHide');
-                        //$('#lab').addClass('LabelShow');
+                        
                         return 'Special characters are not allowed';
                     }
 
@@ -82,11 +79,6 @@
             });
             // User name ended
             
-
-
-
-
-
             // Email checking 
             $(document).ready(function (e) {
                 $('#SubmitButton').click(function () {
