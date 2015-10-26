@@ -182,14 +182,22 @@ lyhidden.focusable:focus {
     }
 }
 
-/*==========================================================================
+/*==============================================================================================================
                                 PCT TEAM EDITS
- ==========================================================================*/
+ =============================================================================================================*/
 
 
 /* <==================================================>*/
 /* <================== Home page ====================>*/
 /* <=================================================>*/
+.container-fluid
+{
+    background-image: url(../img/background/blue7.jpg);
+    background-repeat: no-repeat;
+    background-position: fixed;
+    backface-visibility: visible;
+    background-attachment: fixed;
+}
 .container {
 
     -webkit-box-shadow: 2px -5px 65px 14px rgba(0,0,0,0.34);
@@ -336,7 +344,8 @@ p, div {
     width: 320px;
 }
 #Tweets
-{float: right;}
+{float: right;
+margin: 10px;}
 
 /**********************************
  NEWS AND EVENTS Front END Page END
