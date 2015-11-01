@@ -78,24 +78,128 @@
                 }
             });
             // User name ended
-            
+            $(document).ready(function () {
+                //Password validation fuction calling
+                $('.form-password').keyup(function() {
+                    $('#PassworsSpan').html(checkStrenght($('.form-password').val()));
+                });
+
+               
+               
+                function checkStrenght(password) {
+                    var strenght = 0;
+                    data = $('.form-password').val();
+                    var len = data.length;
+
+                    if (len < 1) {
+                        $('#PassworsSpan').removeClass();
+                        $('#PassworsSpan').addClass('Password can not be blank');
+                        result = 'password cannot be blank';
+                        return 'Password can not be blank';
+                        // Prevent form submission
+                        event.preventDefault();
+                    }
+
+                    if (password.length < 4) {
+                        $('#PassworsSpan').removeClass();
+                        $('#PasswordSpan').addClass('short');
+                        return 'Too Short';
+                    }
+
+                    if (password.length > 6) {
+                        strenght = strenght + 1;
+                    }
+
+                    if (password.match(/([!,%,&,@,#,$,^,*,?,_,~])/) && password.match(/(.*[!,%,&,@,#,$,^,*,?,_,~].*[!,%,&,@,#,$,^,*,?,_,~])/)) {
+                        //alert('Special characters are not allowed');
+                        $('#PassworsSpan').removeClass();
+                        $('#PassworsSpan').addClass('Special charaters are not Allowed');
+                        $('#lab').removeClass('LabelHide');
+                        $('#lab').addClass('LabelShow');
+                        return 'Not allowed';
+                    }
+
+                    if (password.match(/([a-z].*[A-Z])|([A-Z].*[a-z])/)) {
+                        strenght = strenght + 1;
+                    }
+
+                    if (password.match(/([a-zA-Z])/) && password.match(/([0-9])/)) {
+                        strenght = strenght + 1;
+                    }
+
+                    if (strenght < 2) {
+                        $('#PassworsSpan').removeClass();
+                        $('#PassworsSpan').addClass('waek');
+                        return 'Weak';
+                    } else if (strenght == 2) {
+                        $('#PassworsSpan').removeClass();
+                        $('#PassworsSpan').addClass('good');
+                        return 'Good';
+                    } else {
+                        $('#PassworsSpan').removeClass();
+                        $('#PassworsSpan').addClass('strong');
+                        return 'Strong';
+                    }
+                }
+
+                //Check if password match with confirm password
+                $('.form-ConformPassword').keypress(function() {
+                    $('#ConformPasswordSpan').html(matchPassword($('.form-ConformPassword').val()));
+                });
+
+                function matchPassword() {
+                    if ($('.form-password').val() == $('.form-ConformPassword').val()) {
+                        $('#ConformPasswordSpan').removeClass();
+                        $('#ConformPasswordSpan').addClass('PasswordMatch!');
+                        return 'Password Match!';
+                    }
+                    else
+                    {
+                        $('#ConformPasswordSpan').removeClass();
+                        $('#ConformPasswordSpan').addClass('NotMatch!');
+                        return 'Password Not Match!';
+                    }
+                }
+            });
+
+
+            //end of password validation
+
+
+
+
+
             // Email checking 
             $(document).ready(function (e) {
+                $('#form-email').keyup(function () {
+                    $('#emailSpan').html(validateEmail($('.form-email').val()));
+                });
                 $('#SubmitButton').click(function () {
+                    
                     var email = $('#form-email').val();
                     // Checking Empty Fields
                     if ($.trim(email).length == 0 || $("#form-first-name").val() == "" || $("#form-password").val() == "" || $("#Password1").val()=="") {
-                        alert('All fields are Required');
+                         alert('All fields are Required');
+                        //$('#email').removeClass();
+                        //$('#emailSpan').addClass('All field are required');
+                        //return 'All fields are Required';
                         e.preventDefault();
                     }
                     if (validateEmail(email)) {
-                        alert('Thanks for Registeration, We will get back to you');
+                        $('#emailSpan').removeClass();
+                        $('#emailSpan').addClass('Good!! your Email is valid');
+                        return 'Good!! your Email is valid';
+                        //alert('Good!! your Email is valid');
                     }
                     else {
-                        alert('Invalid Email Address');
+                        //alert('Invalid Email Address');
+                        $('#emailSpan').removeClass();
+                        $('#emailSpan').addClass('Invalid');
+                        return 'Invalid Email Address';
                         e.preventDefault();
                     }
                 });
+                $('#SubmitButton').validateEmail();
             });
             // Function that validates email address through a regular expression.
             function validateEmail(pEmail) {
@@ -103,11 +207,15 @@
                 if (filterValue.test(pEmail)) {
                     if (pEmail.indexOf('@uol.edu.pk', pEmail.length - '@uol.edu.pk'.length) != -1)
                     {
-                        return true;
+                        $('#emailSpan').removeClass();
+                        $('#emailSpan').addClass('Perfect');
+                        return 'Just Perfect!';
                     }
                     else {
-                        alert("Email Must be like(yourName@uol.edu.pk)");
-                        return false;
+                        //alert("Email Must be like(yourName@uol.edu.pk)");
+                        $('#emailSpan').removeClass();
+                        $('#emailSpan').addClass('Email Must be like(yourName@uol.edu.pk)');
+                        return 'Email Must be like(yourName@uol.edu.pk)';
                     }
                 }
                 else
@@ -116,7 +224,7 @@
                 }
             }
 
-            $('#SubmitButton').validateEmail();
+
             //Email checking end
 
         </script>
@@ -211,17 +319,18 @@
                                     
 			                        <div class="form-group">
 			                        	<input type="email" name="form-email" placeholder="Email..." class="form-email form-control" id="form-email">
-			                        <lable></lable>
-                                        <span></span>
-                                    </div>
-                                    
-			                        <div class="form-group">
-			                        	<input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
+                                         <span id="emailSpan"></span>
+			
 			                        </div>
                                     
 			                        <div class="form-group">
-			                        	<input type="password" name="form-password" placeholder="Re-enter Password..." class="form-email form-control" id="Password1">
-			
+			                        	<input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
+			                                     <span id="PassworsSpan"></span>
+			                        </div>
+                                    
+			                        <div class="form-group">
+			                        	<input type="password" name="form-password" placeholder="Re-enter Password..." class="form-ConformPassword form-control" id="Password1">
+			                                     <span id="ConformPasswordSpan"></span>
 			                        </div>
                                     <div class="form-group">
                                             <a data-toggle="tooltip" title="Why to Join PCT???" data-placement="left"><select class="form-control" name="type">
