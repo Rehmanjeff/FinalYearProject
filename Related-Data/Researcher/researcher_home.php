@@ -10,8 +10,11 @@
                 <div class="col-md-12">
                     <div class="col-md-6" >
                         <h4>Personal Information</h4>
-                        <input type="text" placeholder="Enter Your Name" name="name" value="'.$row["profile_name"].'" class="form-control" id=""><br>
-                        <input type="text" placeholder="Enter Designation" name="designation" value="'.$row["profile_designation"].'" class="form-control" id=""><br>
+                        <input type="text" name="name" placeholder="Name" class="form-control" value="'.$row["profile_name"].'" required="" id="rName" maxlength="50"/>
+                              <label id="lblrName"></label>
+<br>
+                            <input type="text" name="designation" placeholder="Designation" class="form-control" value="'.$row["profile_designation"].'" id="rDesig" maxlength="30"/>
+                                <label id="lblrDesig"></label><br>
                         <span>Joined Since: 12/08/2015</span>
                     </div>
                             
@@ -19,7 +22,10 @@
                         <div id="contact_info">
                             <h4>Contact Information</h4>
                                 <div id="contact_name">
-                                    <input type="email" name="email"  placeholder="Enter Email Address" value="'.$row["profile_email"].'" class="form-control" id=""><br>
+     
+                            <input type="email" name="email" placeholder="E-mail" class="form-control" value="'.$row["profile_email"].'" id="rEmail" maxlength="30"/>
+                                <label id="lblemail"></label>
+                                <label id="emailSpan"></label><br>
                                     <input type="number" name="phone" placeholder="Enter Phone Number" class="form-control" value="'.$row["profile_phone"].'"><br>
                                     <input type="number" name="fax" placeholder="Enter Fax" class="form-control" value="'.$row["profile_fax"].'">
                                 </div>
@@ -28,7 +34,10 @@
                 <div class="row">
                     <div class="col-md-12">
                         <h1>Something About You:</h1>
-                        <textarea placeholder="Something about You!!!" rows="2" name="details" class="form-control">'.$row["profile_details"].'</textarea>
+                        <textarea placeholder="Something about You!!!" rows="2" name="details" class="form-control" id="comments" maxlength="200">'.$row["profile_details"].'</textarea>
+                    
+                         <span id="commentSpan" style=""></span>
+                         <label id="lblcomments"></label> 
                         
                         <div class="modal-footer" style="float:right">
                             <div class="col-md-6">

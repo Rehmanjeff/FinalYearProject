@@ -1,7 +1,5 @@
-<div class="row cursor">
-    Updates
-</div>
-
+<br>
+<br>
 <?php
 $sql="SELECT * FROM news ORDER BY inactiveDate DESC";
 $result=  mysqli_query($link, $sql);

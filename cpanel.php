@@ -24,9 +24,8 @@ A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themefores
 Licensed under MIT
 -->
 
-<div class="container">
-    
-    <?php include('header.php'); ?>
+<div class="container" style="
+    margin-top: 30px;">
     <div class="row profile" id="admin_profile">
 		<div class="col-md-3">
 			<div class="profile-sidebar">
@@ -111,6 +110,12 @@ Licensed under MIT
                             <i class="glyphicon glyphicon-picture"></i>
 							Gallery </a>
                         </li>
+                        
+                        <li>
+                            <a href="#gallery" data-toggle="tab">
+                            <i class="glyphicon glyphicon-user"></i>
+							Log Out </a>
+                        </li>
 					</ul>
 				</div>
 				<!-- END MENU -->
@@ -149,11 +154,7 @@ Licensed under MIT
                             </div>
                         </div>
                         <div class="tab-pane fade" id="news">
-<!--
-                            <div class="col-md-12">
-                                <?php/* include ('aPNews.php')*/;?>
-                            </div>
-    -->                     <div class="row">
+                            <div class="row">
                                 <div class="col-md-10">
                                     <?php include ('Related-Data/Admin/News/body.php');?>
                                 </div>

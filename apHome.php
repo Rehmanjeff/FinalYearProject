@@ -87,29 +87,7 @@
         }
 
     echo '<div class="modal fade" id="myModal2" role="dialog">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h3>Add New Conetent....:</h3>
-                    </div>
-                                        
-                    <div class="modal-body">
-                        <p>
-                            <form action="" method="POST">
-                                <div class="row" style="margin:20px">
-                                    <label for="comment">Title: </label>
-                                        <input type="text" class="form-control" name="webName" placeholder="Title of Website"/>                
-                                        <br/>            
-                                        <label for="comment">Text: </label>
-                                        <textarea class="form-control" rows="5" cols="500" id="comment" name="text" placeholder="Some description here...."></textarea>
-                                        <input type="submit" class="btn btn-primary"  name="newContent" value="Update">
-                                </div>
-                            </form>
-                        </p>
-                    </div>
-                </div>
-            </div>
+           
         </div>';
 
         if(isset($_POST["newContent"])){
@@ -147,11 +125,18 @@
                             <input type="submit" class="btn btn-primary" style="float:right" value="Update">';
                 
                         }*/
-    echo '
-        <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">
-        <span class="glyphicon glyphicon-plus" ></span>
-            Add New Content...
-        </button>
+    echo '<form action="" method="POST">
+            <div class="row" style="margin:20px">
+                <label for="comment">Title: </label>
+                    <input type="text" class="form-control" name="webName" placeholder="Title of Website"/>                
+                    <br/>            
+                    <label for="comment">Text: </label>
+                    <textarea class="form-control" rows="5" cols="500" id="comment" name="text" placeholder="Some description here...."></textarea>           
+        <br/>
+                    <input type="submit" class="btn btn-primary"  name="newContent" value="Update">
+            </div>
+        </form>
+                        
         <br/>
         <br/>';
                 

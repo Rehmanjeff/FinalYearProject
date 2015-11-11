@@ -192,7 +192,6 @@ lyhidden.focusable:focus {
 /* <=================================================>*/
 .container-fluid
 {
-    background-image: url(../img/background/blue7.jpg);
     background-repeat: no-repeat;
     background-position: fixed;
     backface-visibility: visible;
@@ -408,6 +407,7 @@ div#img_gallery{
 
 body {
   background: #F1F3FA;
+      background-image: url(../img/background/blue7.jpg);
 }
 
 /* Profile container */
@@ -519,7 +519,6 @@ input[type=file]{
 }
 #admin_profile
 {
-    margin-top: 280px;
 }
 
 /*
