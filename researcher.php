@@ -589,8 +589,8 @@
 							Students Projects </a>
                         </li>
                         
-                        <li>
-                            <a href="#academic_resources" data-toggle="tab">
+                        <li class="dropdown">
+                            <a href="#academic_resources" class="dropdown-toggle" data-toggle="tab">
                             <i class="glyphicon glyphicon-calendar"></i>
 							Academic Resources</a>
                         </li>
@@ -648,16 +648,13 @@
                                 </div>
                             </div>
                         </div>
-                    
                     </div>
                 </div>
             </div>
 		</div>                  
     </div>
-        </div>
-    </div>
-        
-        
+</div>
+    </div>        
 </div>
     
 </body>
