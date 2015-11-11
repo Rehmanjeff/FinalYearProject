@@ -10,16 +10,16 @@ while($row=  mysqli_fetch_assoc($result)){
     echo '
     <div class="infoTab">
         <div class="row title">
-            <div class="col-md-10">
+            <div class="col-md-8">
                 <b><u><i>'.$row["subject"].'</i></u></b><br>
                 '.$row["description"].'
             </div>
-            <div class="col-md-2">
+            <div class="col-md-4">
                 <a href="?remove='.$row["id"].'" style="color:red ; float: right" ><span class="glyphicon glyphicon-remove"></span></a><br>
                  <div class="col-md-12 newsGreen">
                 '.$row["startDate"].'
                 </div>
-            <div class="col-md-12 newsYellow">
+            <div class="col-md-12 newsRed">
                 '.$row["inactiveDate"].'
             </div>
             </div>

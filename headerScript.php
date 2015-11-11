@@ -8,14 +8,15 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap-theme.min.css">
 
 	<link rel="stylesheet" href="css/footer-distributed-with-address-and-phones.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 <link href="http://fonts.googleapis.com/css?family=Corben:bold" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=Nobile" rel="stylesheet" type="text/css">

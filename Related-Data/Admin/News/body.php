@@ -1,3 +1,23 @@
+<style>
+.infoTab {
+    background-color: #f7f7f7;
+    margin: 0 0 0 0;
+    padding: 20px;
+}
+    .infoTab::hover
+    {
+    }
+    .newsGreen
+    {
+        border:1px black solid;
+        border-color:green;
+    }
+    .newsRed
+    {
+        border:1px black solid;
+        border-color:Red;
+    }
+</style>
 <?php
     /**********************************************************************************************************************
      * This function tests active and de active news on every page refresh
@@ -23,13 +43,13 @@
         <br>
         <div class="row">
             
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <input type="date" name="startDate" class="form-control" value="<?php print(date("Y-m-d")); ?>"/>
             </div>
             <div class="col-md-1">
                 <ledgent> to </ledgent>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
                 <input type="date" name="inactiveDate" class="form-control"/ >
             </div>
             <div class="col-md-2">
@@ -44,11 +64,16 @@
 <?php 
 echo '<form action="" method="POST">
         <div class="div">
-            <div class="col-md-12">';
-                include("Related-Data/Admin/News/viewNews.php");
+            <div class="col-md">';
+                include("Related-Data/Admin/News/viewActiveNewsDB.php");
+            echo '</div>
+            <div class="col-md">';
+                include("Related-Data/Admin/News/viewInactiveNewsDB.php");    
             echo '</div>
         </div>
 </form>';
+   
+include 'Related-DAta/Admin/News/phpScript.php';
    
             
 include 'Related-DAta/Admin/News/phpScript.php';

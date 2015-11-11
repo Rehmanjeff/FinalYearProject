@@ -38,14 +38,19 @@ Licensed under MIT
                         $dp=  mysqli_fetch_assoc($result);
         
                         if(empty($dp)){
-                            echo '<img style="float: left"  hspace="20" src="img/male.png    " >';
+                            echo '<img style="float:"  hspace="20" src="img/male.png    " >';
                         }
                         
                         else{
                             echo '<img style="" class="image-cropper" hspace="20" src="dp/'.$dp['dp_file'].'">';
                         }
                     ?>
+                    
+ <input type="file"  onchange="this.form.submit()" class="filestyle" data-classButton="btn btn-primary" name="btn-upload" 
+     style="margin-left: 85px;
+    margin-top: 11px; width:90px"/>
 				</div>
+                
                 <h3>Admin Pannel</h3>
 				<!-- END SIDEBAR USERPIC -->
 				<!-- SIDEBAR USER TITLE -->

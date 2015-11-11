@@ -556,8 +556,8 @@
 				<!-- SIDEBAR BUTTONS -->
 				<div class="profile-userbuttons">
                     <form action="" method="POST" enctype="multipart/form-data">
-                        <span class="btn btn-primary btn-file" ><input type="file" class="filestyle" data-classButton="btn btn-primary" name="file"></span>
-                        <button type="submit" name="btn-upload" class="btn btn-success btn-file"> Upload</button>
+                        <span class="btn btn-primary btn-file" >
+ <input type="file" onchange="this.form.submit()" class="filestyle" data-classButton="btn btn-primary" name="btn-upload"/> 
 				</div>
 				<!-- END SIDEBAR BUTTONS -->
 				<!-- SIDEBAR MENU -->
